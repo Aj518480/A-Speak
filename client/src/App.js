@@ -8,12 +8,14 @@ import {
 	withRouter
 } from 'react-router-dom';
 import Auth from "./utils/Auth";
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
+import Navbar from "./components/NavPage"
 import Login from "./components/Login";
 import Register from "./components/Register";
 import {Container} from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/PublicRoute";
+import Footer from "./components/Footer";
 import './App.css';
 
 //I want to add some basic inline styling here, even though we are bringing in styles
@@ -25,7 +27,8 @@ const listStyle = {
 const AuthExample = () => (
 	<Router>
 		<div>
-      		<Nav className="App-header"/>
+			  {/* <Nav className="App-header"/> */}
+			  <Navbar />
 			<Container>
 				<AuthButton/>
 				<ul style={listStyle}>
@@ -41,6 +44,7 @@ const AuthExample = () => (
 					{/* <Route component={NoMatch} /> */}
 				</Switch>
 			</Container>
+			<Footer />
 		</div>
 	</Router>
 )
