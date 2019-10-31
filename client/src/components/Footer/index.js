@@ -6,7 +6,7 @@ function Footer() {
   
 <div>
 
-<footer className="fixed-bottom page-footer font-small blue pt-4">
+<footer className="fixed-bottom page-footer font-small pt-4 bg-primary">
 
   <div className="container-fluid text-center text-md-left">
 
