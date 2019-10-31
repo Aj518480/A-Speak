@@ -17,7 +17,7 @@ import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/PublicRoute";
 import Footer from "./components/Footer";
 import './App.css';
-import Footer from "./components/Footer"
+
 
 
 //I want to add some basic inline styling here, even though we are bringing in styles
@@ -28,9 +28,10 @@ const listStyle = {
 //Now we have all the stuff we need .. let's render some components with the Router
 const AuthExample = () => (
 	<Router>
+
 		<div>
-			  {/* <Nav className="App-header"/> */}
-			  <Navbar />
+			   
+			  <Navbar/>
 			<Container>
 				<AuthButton/>
 				<ul style={listStyle}>
@@ -43,11 +44,11 @@ const AuthExample = () => (
 					<Route path="/login" component={Login}/>
 					<Route path="/register" component={Register}/>
 					<PrivateRoute path="/protected" component={ProtectedRoute}/>
-					{/* <Route component={NoMatch} /> */}
+					
 				</Switch>
 			</Container>
-			<Footer>
-			<Footer />
+			<Footer/>
+			
 		</div>
 		
 	</Router>
