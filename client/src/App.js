@@ -15,6 +15,8 @@ import {Container} from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/PublicRoute";
 import './App.css';
+import Footer from "./components/Footer"
+
 
 //I want to add some basic inline styling here, even though we are bringing in styles
 const listStyle = {
@@ -41,7 +43,10 @@ const AuthExample = () => (
 					{/* <Route component={NoMatch} /> */}
 				</Switch>
 			</Container>
+			<Footer>
+			</Footer>
 		</div>
+		
 	</Router>
 )
 
