@@ -1,3 +1,8 @@
 .navbar {
   border-radius: 0;
 }
+
+.navbar-brand {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 3.25rem;
+}
