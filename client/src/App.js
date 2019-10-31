@@ -54,8 +54,8 @@ const AuthExample = () => (
 	</Router>
 )
 
-
-//Authbutton component / withRouter is imported from react-router
+{/* 
+//Authbutton component / withRouter is imported from react-router */}
 const AuthButton = withRouter(({ history }) => (
 	Auth.isAuthenticated ? (
 		<div className="container">
