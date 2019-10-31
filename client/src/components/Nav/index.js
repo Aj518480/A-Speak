@@ -33,9 +33,9 @@ class Nav extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-2">
         <Link className="navbar-brand" to="/">
-          Auth Plate
+          ASpeak
         </Link>
         <button
           onClick={this.toggleNav}
@@ -83,5 +83,6 @@ class Nav extends Component {
     );
   }
 }
+
 
 export default Nav;
