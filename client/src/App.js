@@ -13,9 +13,10 @@ import Navbar from "./components/NavPage"
 import Login from "./components/Login";
 import Register from "./components/Register";
 import {Container} from "./components/Grid";
-import PublicRoute from "./pages/PublicRoute";
+// import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/PublicRoute";
 import Footer from "./components/Footer";
+import Button from "./components/Button";
 import './App.css';
 
 
@@ -33,14 +34,22 @@ const AuthExample = () => (
 			   
 			  <Navbar/>
 			<Container>
+				
+				{/* <Button>Log In</Button> */}
+				
 				<AuthButton/>
-				<ul style={listStyle}>
+				{/* <ul style={listStyle}>
 					<li><Link to="/public">Public Page</Link></li>
 					<li><Link to="/protected">Protected Page</Link></li>
 					<li><Link to="/register">Register a New User</Link></li>
+				</ul> */}
+				<ul style={listStyle}>
+					<li><Link to="/login"><Button>Log In</Button></Link></li>
+					<br />
+					<li><Link to="/register"><Button>Sign Up</Button></Link></li>
 				</ul>
 				<Switch>
-					<Route path="/public" component={PublicRoute}/>
+					{/* <Route path="/public" component={PublicRoute}/> */}
 					<Route path="/login" component={Login}/>
 					<Route path="/register" component={Register}/>
 					<PrivateRoute path="/protected" component={ProtectedRoute}/>
@@ -54,8 +63,8 @@ const AuthExample = () => (
 	</Router>
 )
 
-{/* 
-//Authbutton component / withRouter is imported from react-router */}
+
+//Authbutton component / withRouter is imported from react-router */
 const AuthButton = withRouter(({ history }) => (
 	Auth.isAuthenticated ? (
 		<div className="container">

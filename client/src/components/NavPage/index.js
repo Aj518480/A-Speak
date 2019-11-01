@@ -6,7 +6,7 @@ function Navbar() {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav className="navbar navbar-expand-lg navbar-primary bg-light">
 
                 <a className="navbar-brand" href="google.com">A-Speak</a>
 

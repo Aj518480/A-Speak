@@ -6,3 +6,7 @@
 a.navbar-brand {
     margin: 0 auto;
 }
+
+.navbar {
+  box-shadow: 10px 10px 20px rgb(0,0,0,0.25);
+}
