@@ -32,6 +32,7 @@ const AuthExample = () => (
 		<div>
 			   
 			  <Navbar/>
+			  <div className="background">
 			<Container>
 				<AuthButton/>
 				<ul style={listStyle}>
@@ -47,6 +48,7 @@ const AuthExample = () => (
 					
 				</Switch>
 			</Container>
+			</div>
 			<Footer/>
 			
 		</div>
