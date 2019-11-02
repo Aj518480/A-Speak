@@ -9,8 +9,6 @@ a.navbar-brand {
 
 .navbar {
   box-shadow: 10px 10px 20px rgb(0,0,0,0.25);
-<<<<<<< HEAD
-=======
 }
 
 /* button.btn-outline-primary.btn-rounded.waves-effect {
@@ -47,5 +45,3 @@ img.d-inline-block.align-top {
   width: 90px;
   height: 100px;
   transform: rotate(139deg) translate(-4px, 24px);
->>>>>>> db378adbf5676bf874482c787a855c406c8221a6
-}
