@@ -45,6 +45,7 @@ const AuthExample = () => (
 					<li><Link to="/protected">Protected Page</Link></li>
 					<li><Link to="/register">Register a New User</Link></li>
 				</ul> */}
+
 				<Jumbotron>
 				</Jumbotron>
 				<ul style={listStyle}>
@@ -57,6 +58,7 @@ const AuthExample = () => (
 				<Button>Sign Up</Button> */}
 
 				<Switch>
+
 					<Route path="/public" component={PublicRoute} />
 					<Route path="/login" component={Login} />
 					<Route path="/register" component={Register} />
@@ -72,6 +74,7 @@ const AuthExample = () => (
 
 	</Router>
 )
+
 
 
 //Authbutton component / withRouter is imported from react-router 
