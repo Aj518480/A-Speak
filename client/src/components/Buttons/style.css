@@ -9,3 +9,20 @@ button.btn-outline-primary.btn-rounded.waves-effect {
     background-color: #007bff;
     border-color: #007bff;
   }
+
+ul > li > a > div {
+    padding: 10px;
+    margin: 0 auto;
+    display: grid;
+}
+  
+ul > li > a {
+    text-decoration: none;
+    color: blue;
+    /* background-color: #6398d2; */
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}

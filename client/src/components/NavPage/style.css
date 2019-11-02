@@ -23,7 +23,7 @@ a.navbar-brand {
   border-color: #007bff;
 } */
 
-ul > li > a > div {
+/* ul > li > a > div {
   padding: 10px;
   margin: 0 auto;
   display: grid;
@@ -32,11 +32,17 @@ ul > li > a > div {
 ul > li > a {
   text-decoration: none;
   color: blue;
-  /* background-color: #6398d2; */
-}
+  /* background-color: #6398d2; 
+} */
 
 /* a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
 } */
+
+img.d-inline-block.align-top {
+  width: 90px;
+  height: 100px;
+  transform: rotate(139deg) translate(-4px, 24px);
+}
