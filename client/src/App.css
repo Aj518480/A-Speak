@@ -14,10 +14,15 @@
   color: white;
 }
 .background{
-  background-image: url("../src/Images/whitePuzzle.jpg");
-  height:100vh;
-  background-size:cover;
+  background: url("../src/Images/whitePuzzle.jpg");
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
  
+}
+.container{
+  height:1000px;
+  
 }
 
 
