@@ -6,3 +6,37 @@
 a.navbar-brand {
     margin: 0 auto;
 }
+
+.navbar {
+  box-shadow: 10px 10px 20px rgb(0,0,0,0.25);
+}
+
+/* button.btn-outline-primary.btn-rounded.waves-effect {
+  border: 3px solid;
+  font-size: 3rem;
+  border-radius: 3.25rem;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+} */
+
+ul > li > a > div {
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: blue;
+  /* background-color: #6398d2; */
+}
+
+/* a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+} */
