@@ -1,4 +1,44 @@
 .bg-primary{
     color:white;
 }
+.avatar{
+    padding:20px;
+    margin:50px;
+}
+img{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.colorOfFooter{
+ background-color: 
+ #007bff;
+color:white;
+}
+.creatorsTitle{
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 3.25rem;
+}
+.titleBio{
+    text-align: center;
+}
+.smallFooter{
+    background-color:white;
+    color:#007bff;;
+    font-family: 'Roboto', sans-serif;
+}
 
+p{
+    font-family: 'Roboto', sans-serif;
+    
+}
+h5{
+    font-family: 'Roboto', sans-serif; 
+}
+
+.white-text{
+    color:white;
+}
+.icons{
+    text-align: center;
+}
