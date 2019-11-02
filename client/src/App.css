@@ -13,6 +13,16 @@
   padding: 20px;
   color: white;
 }
+.background{
+  background-image: url("../src/Images/whitePuzzle.jpg");
+  height:100vh;
+  background-size:cover;
+ 
+}
+
+
+
+
 
 
 
