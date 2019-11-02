@@ -8,7 +8,8 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-primary bg-light">
 
-                <a className="navbar-brand" href="google.com">A-Speak</a>
+                <a className="navbar-brand" href="google.com"><img src="https://www.pinclipart.com/picdir/big/19-192852_simplistic-puzzle-piece-coloring-page-pieces-free-clip.png" height="30" class="d-inline-block align-top"
+                    alt="mdb logo" /> A-Speak</a>
 
                 {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                     aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +43,7 @@ function Navbar() {
 
                     </ul> */}
 
-                    {/* <form className="form-inline">
+                {/* <form className="form-inline">
                         <div className="md-form my-0">
                             <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
                         </div>

@@ -33,7 +33,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-2">
+      <nav className="navbar navbar-expand-lg navbar-primary bg-light mb-2">
         <Link className="navbar-brand" to="/">
           ASpeak
         </Link>
