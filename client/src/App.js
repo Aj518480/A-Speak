@@ -17,6 +17,8 @@ import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/PublicRoute";
 import Footer from "./components/Footer";
 import Button from "./components/Buttons";
+
+import Jumbotron from "./components/Jumbotron"
 import './App.css';
 
 
@@ -30,18 +32,21 @@ const listStyle = {
 const AuthExample = () => (
 	<Router>
 
-		<div>
+		<div className="background">
 
 
 			<Navbar />
 
 			<Container>
+				
 				<AuthButton />
 				{/* <ul style={listStyle}>
 					<li><Link to="/public">Public Page</Link></li>
 					<li><Link to="/protected">Protected Page</Link></li>
 					<li><Link to="/register">Register a New User</Link></li>
 				</ul> */}
+				<Jumbotron>
+				</Jumbotron>
 				<ul style={listStyle}>
 					<li><Link to="/login"><Button>Log In</Button></Link></li>
 					{/* <li><Link to="/protected">Protected Page</Link></li> */}
