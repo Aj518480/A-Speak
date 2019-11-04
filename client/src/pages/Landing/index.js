@@ -38,7 +38,7 @@ class Landing extends React.Component {
                 </ul>
                 </Container>
 
-                <Footer />
+                <Footer/>
             </div>
         )
     }

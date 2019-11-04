@@ -80,7 +80,7 @@ const AuthExample = () => (
 
 
 				
-			<PlainFooter/>
+			{/* <PlainFooter/> */}
 
 
 		</div>
