@@ -3,7 +3,6 @@ import {
 	Link
 } from 'react-router-dom';
 import Button from "../../components/Buttons";
-import Navbar from "../../components/NavPage";
 import { Container } from "../../components/Grid";
 import Jumbotron from "../../components/Jumbotron";
 import Footer from "../../components/Footer";
@@ -29,8 +28,6 @@ class Landing extends React.Component {
             <div>
                 {/* <h3>This is a Public Page Here</h3>
                 <p>Anyone can see this content</p> */}
-
-                <Navbar />
                 <Container>
                 <Jumbotron />
                 <ul style={listStyle}>

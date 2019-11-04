@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
 import {
 	BrowserRouter as Router,
 	Route,
-	Link,
 	Redirect,
 	Switch,
 	withRouter
@@ -10,25 +9,29 @@ import {
 import Auth from "./utils/Auth";
 // import Nav from "./components/Nav";
 import Navbar from "./components/NavPage"
-import Login from "./components/Login";
+// import Login from "./components/Login";
 import Register from "./components/Register";
 import { Container } from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/PublicRoute";
-import Footer from "./components/Footer";
-import Button from "./components/Buttons";
+// import Footer from "./components/Footer";
+// import Button from "./components/Buttons";
 
-import Jumbotron from "./components/Jumbotron"
+// import Jumbotron from "./components/Jumbotron"
 import './App.css';
+
+import LoginPage from "./pages/LoginPage";
+import Landing from "./pages/Landing";
+import Login from './components/Login';
 
 
 
 
 //I want to add some basic inline styling here, even though we are bringing in styles
-const listStyle = {
-	color: 'cornflowerblue',
-	listStyle: 'none'
-};
+// const listStyle = {
+// 	color: 'cornflowerblue',
+// 	listStyle: 'none'
+// };
 //Now we have all the stuff we need .. let's render some components with the Router
 const AuthExample = () => (
 	<Router>
@@ -38,27 +41,39 @@ const AuthExample = () => (
 
 			<Navbar />
 
-			<Container>
+			
 				
-				<AuthButton />
+			
 				{/* <ul style={listStyle}>
 					<li><Link to="/public">Public Page</Link></li>
 					<li><Link to="/protected">Protected Page</Link></li>
 					<li><Link to="/register">Register a New User</Link></li>
 				</ul> */}
 
-				<Jumbotron>
+				{/* <Jumbotron>
 				</Jumbotron>
 				<ul style={listStyle}>
 					<li><Link to="/login"><Button>Log In</Button></Link></li>
-					{/* <li><Link to="/protected">Protected Page</Link></li> */}
+					<li><Link to="/protected">Protected Page</Link></li>
 					<li><Link to="/register"><Button>Sign Up</Button>
 					</Link></li>
-				</ul>
+				</ul> */}
 				{/* <Button>Log In</Button>
 				<Button>Sign Up</Button> */}
-
+				<AuthButton />
 				<Switch>
+
+					<Container>
+					<Route exact path="/" component={Landing} />
+					{/* <Route path="/public" component={PublicRoute} /> */}
+					{/* <Route exact path="/loginpage" component={LoginPage}/> */}
+					<Route exact path="/login" component={Login}/>
+					<Route exact path="/register" component={Register} />
+					<PrivateRoute exact path="/protected" component={ProtectedRoute} />
+					{/* <PrivateRoute exact path="/protected" component={ProtectedRoute} /> */}
+					</Container>
+				</Switch>
+
 
 					<Route path="/NewUserForm" component={PublicRoute} />
 					<Route path="/public" component={PublicRoute} />
@@ -70,7 +85,11 @@ const AuthExample = () => (
 				
 			</Container>
 
-			<Footer />
+
+				
+			{/* 
+
+			<Footer /> */}
 
 
 		</div>

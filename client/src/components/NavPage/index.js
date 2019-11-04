@@ -8,7 +8,7 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-primary bg-light">
 
-                <a className="navbar-brand" href="google.com"><img src="https://www.pinclipart.com/picdir/big/19-192852_simplistic-puzzle-piece-coloring-page-pieces-free-clip.png" height="30" class="d-inline-block align-top"
+                <a className="navbar-brand" href="/"><img src="https://www.pinclipart.com/picdir/big/19-192852_simplistic-puzzle-piece-coloring-page-pieces-free-clip.png" height="30" className="d-inline-block align-top"
                     alt="mdb logo" /> A-Speak</a>
 
                 {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"

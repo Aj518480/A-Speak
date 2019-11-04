@@ -33,11 +33,11 @@ function Footer() {
               </p>
             <ul className="list-unstyled mb-5 icons">
               
-              <a className="p-2 fa-lg fb-ic" href="https://www.linkedin.com/in/allison-juarez-6712a518b/" target="_blank">
+              <a className="p-2 fa-lg fb-ic" href="https://www.linkedin.com/in/allison-juarez-6712a518b/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin white-text"> </i>
               </a>
               
-              <a className="p-2 fa-lg ins-ic" href="https://github.com/Aj518480" target="_blank">
+              <a className="p-2 fa-lg ins-ic" href="https://github.com/Aj518480" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github white-text"> </i>
               </a>
               
@@ -62,11 +62,11 @@ function Footer() {
             <p className="white-text text-center">Gelissa leveille is a full-stack javascript developer from sunny florida. her likes include books, movies, and css.  due to commitment issues, all changes will be made in the dev tools until further notice.</p>
             <ul className="list-unstyled mb-5 icons">
               
-              <a className="p-2 fa-lg fb-ic" href="http://linkedin.com/in/gelissaleveille" target="_blank">
+              <a className="p-2 fa-lg fb-ic" href="http://linkedin.com/in/gelissaleveille" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin white-text"> </i>
               </a>
              
-              <a className="p-2 fa-lg ins-ic" href="http://github.com/gelissa" target="_blank">
+              <a className="p-2 fa-lg ins-ic" href="http://github.com/gelissa" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github white-text"> </i>
               </a>
               
