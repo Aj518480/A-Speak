@@ -24,7 +24,7 @@ import LoginPage from "./pages/LoginPage";
 import Landing from "./pages/Landing";
 import Login from './components/Login';
 import NewUserForm from "./pages/NewUserForm";
-
+import Go from "./pages/Go"
 
 
 
@@ -72,6 +72,7 @@ const AuthExample = () => (
 					<Route exact path="/register" component={Register} />
 					<PrivateRoute exact path="/protected" component={ProtectedRoute} />
 					<Route path="/new" component={NewUserForm} />
+					<Route path="/go" component={Go} />
 					{/* <PrivateRoute exact path="/protected" component={ProtectedRoute} /> */}
 					
 				</Switch>
