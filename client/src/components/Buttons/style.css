@@ -1,12 +1,12 @@
-button.btn-outline-primary.btn-rounded.waves-effect {
+button.btn-primary.btn-rounded.waves-effect {
     border: 3px solid;
     font-size: 3rem;
     border-radius: 3.25rem;
 }
   
-.btn-outline-primary:hover {
-    color: #fff;
-    background-color: #007bff;
+.btn-primary:hover {
+    color: #007bff;
+    background-color: #fff;
     border-color: #007bff;
   }
 

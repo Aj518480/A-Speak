@@ -23,8 +23,7 @@ import './App.css';
 import LoginPage from "./pages/LoginPage";
 import Landing from "./pages/Landing";
 import Login from './components/Login';
-import plainFooter from './components/PlainFooter';
-import PlainFooter from './components/PlainFooter';
+import NewUserForm from "./pages/NewUserForm";
 
 
 
@@ -72,7 +71,7 @@ const AuthExample = () => (
 					<Route exact path="/login" component={Login}/>
 					<Route exact path="/register" component={Register} />
 					<PrivateRoute exact path="/protected" component={ProtectedRoute} />
-					<Route path="/NewUserForm" component={PublicRoute} />
+					<Route path="/new" component={NewUserForm} />
 					{/* <PrivateRoute exact path="/protected" component={ProtectedRoute} /> */}
 					
 				</Switch>
