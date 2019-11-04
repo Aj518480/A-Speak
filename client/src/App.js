@@ -23,6 +23,7 @@ import './App.css';
 
 
 
+
 //I want to add some basic inline styling here, even though we are bringing in styles
 const listStyle = {
 	color: 'cornflowerblue',
@@ -59,12 +60,14 @@ const AuthExample = () => (
 
 				<Switch>
 
+					<Route path="/NewUserForm" component={PublicRoute} />
 					<Route path="/public" component={PublicRoute} />
 					<Route path="/login" component={Login} />
 					<Route path="/register" component={Register} />
 					<PrivateRoute path="/protected" component={ProtectedRoute} />
 
 				</Switch>
+				
 			</Container>
 
 			<Footer />
