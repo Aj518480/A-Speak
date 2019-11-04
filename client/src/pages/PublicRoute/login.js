@@ -3,6 +3,7 @@ import React from 'react';
 import Login from "../../components/Login";
 import { Container } from "../../components/Grid";
 import Auth from "../../utils/Auth";
+import PlainFooter from '../../components/PlainFooter';
 /*ToDo*/
 /**
  * Let's get some styling in here
@@ -15,6 +16,7 @@ class LoginPage extends React.Component {
             <Container>
             <Login />
             </Container>
+			
 		)
 	}
 }

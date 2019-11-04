@@ -1,4 +1,5 @@
 import React from 'react'
+import PlainFooter from '../../components/PlainFooter'
 
 class NewUserForm extends React.Component {
 	render() {
@@ -8,6 +9,7 @@ class NewUserForm extends React.Component {
                 <Jumbotron>
                 <Form></Form>
                 </Jumbotron>
+                <PlainFooter/>
             </div>	
 		)
 	}
