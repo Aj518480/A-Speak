@@ -23,6 +23,8 @@ import './App.css';
 import LoginPage from "./pages/LoginPage";
 import Landing from "./pages/Landing";
 import Login from './components/Login';
+import plainFooter from './components/PlainFooter';
+import PlainFooter from './components/PlainFooter';
 
 
 
@@ -78,9 +80,7 @@ const AuthExample = () => (
 
 
 				
-			{/* 
-
-			<Footer /> */}
+			<PlainFooter/>
 
 
 		</div>
