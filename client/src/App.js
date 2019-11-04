@@ -63,7 +63,7 @@ const AuthExample = () => (
 				<AuthButton />
 				<Switch>
 
-					<Container>
+					
 					<Route exact path="/" component={Landing} />
 					{/* <Route path="/public" component={PublicRoute} /> */}
 					{/* <Route exact path="/loginpage" component={LoginPage}/> */}
@@ -72,7 +72,7 @@ const AuthExample = () => (
 					<PrivateRoute exact path="/protected" component={ProtectedRoute} />
 					<Route path="/NewUserForm" component={PublicRoute} />
 					{/* <PrivateRoute exact path="/protected" component={ProtectedRoute} /> */}
-					</Container>
+					
 				</Switch>
 				
 
