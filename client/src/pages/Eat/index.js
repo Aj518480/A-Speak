@@ -20,6 +20,7 @@ class Eat extends Component {
 						key={board.id}
 						id={board.id}
 						image={board.image}
+						name={board.name}
 						// handleClick={this.handleClick}
 					/>
 				))}

@@ -6,6 +6,7 @@
       "image":
         "./Images/Eat/Apple_Juice.PNG",
         "alt":"appleJuice",
+        "name":"Apple Juice",
         "boardName":"eat"
       
     },
@@ -14,6 +15,7 @@
       "image":
       "./Images/Eat/Apple.PNG",
         "alt":"apple",
+        "name":"Apple",
         "boardName":"eat"
     },
     {
@@ -21,6 +23,7 @@
       "image":
       "./Images/Eat/Baby_carrots.PNG",
         "alt":"babyCarrots",
+        "name":"Baby Carrots",
         "boardName":"eat"
     },
     {
@@ -28,6 +31,7 @@
       "image":
         "./Images/Eat/Banana.PNG",
         "alt":"banana",
+        "name":"Banana",
         "boardName":"eat"
     },
     {
@@ -35,6 +39,7 @@
       "image":
       "./Images/Eat/Chicken_Nuggets.PNG",
         "alt":"chickenNuggets",
+        "name":"Chicken Nuggets",
         "boardName":"eat"
     },
     {
@@ -42,6 +47,7 @@
       "image":
         "./Images/Eat/glass_of_water.PNG",
         "alt":"glassOfWater",
+        "name":"Water",
         "boardName":"eat"
     },
     {
@@ -49,6 +55,7 @@
       "image":
         "./Images/Eat/Mac_and_Cheese.PNG",
         "alt":"macAndCheese",
+        "name":"Mac and Cheese",
         "boardName":"eat"
     },
     {
@@ -56,6 +63,7 @@
       "image":
       "./Images/Eat/Peanut_Butter_and_Jelly.PNG",
         "alt":"peanutAndJelly",
+        "name":"Sandwich",
         "boardName":"eat"
     }
     
@@ -78,7 +86,7 @@
           "image":
           "./Images/Go/Bathroom.PNG",
             "alt":"potty",
-        
+            "name":"Bathroom",
             "boardName":"go"
         },
         {
@@ -86,6 +94,7 @@
           "image":
           "./Images/Go/bike_riding.PNG",
             "alt":"bikeRiding",
+            "name":"Bike Riding",
             "boardName":"go"
         },
         {
@@ -93,6 +102,7 @@
           "image":
           "./Images/Go/bowling.PNG",
             "alt":"bowling",
+            "name":"Bowling",
             "boardName":"go"
         },
         {
@@ -100,6 +110,7 @@
           "image":
           "./Images/Go/library.PNG",
             "alt":"library",
+            "name":"Library",
             "boardName":"go"
         },
         {
@@ -107,6 +118,7 @@
           "image":
           "./Images/Go/park_slide.PNG",
             "alt":"park",
+            "name":"Park",
             "boardName":"go"
         },
         {
@@ -114,6 +126,7 @@
           "image":
             "./Images/Go/pool.PNG",
             "alt":"pool",
+            "name":"Pool",
             "boardName":"go"
         },
         {
@@ -121,6 +134,7 @@
           "image":
           "./Images/Go/school.PNG",
             "alt":"school",
+            "name":"School",
             "boardName":"go"
         }
         
@@ -133,6 +147,7 @@
               "image":
               "./Images/Play/ball.PNG",
                 "alt":"soccer",
+                "name":"Ball",
                 "boardName":"play"
               
             },
@@ -141,6 +156,7 @@
               "image":
               "./Images/Play/blocks.PNG",
                 "alt":"blocks",
+                "name":"Blocks",
                 "boardName":"play"
             },
             {
@@ -148,6 +164,7 @@
               "image":
               "./Images/Play/doll.PNG",
                 "alt":"doll",
+                "name":"Doll",
                 "boardName":"play"
             },
             {
@@ -155,6 +172,7 @@
               "image":
               "./Images/Play/robot.PNG",
                 "alt":"robot",
+                "name":"Robot",
                 "boardName":"play"
             },
             {
@@ -162,6 +180,7 @@
               "image":
               "./Images/Play/Tablet.PNG",
                 "alt":"tabletAndPhone",
+                "name":"Tablet",
                 "boardName":"play"
             },
             {
@@ -169,6 +188,7 @@
               "image":
               "./Images/Play/teddy_bear.PNG",
                 "alt":"teddyBear",
+                "name":"Teddy Bear",
                 "boardName":"play"
             },
             {
@@ -176,6 +196,7 @@
               "image":
               "./Images/Play/toy_car.PNG",
                 "alt":"cars",
+                "name":"Car",
                 "boardName":"play"
             },
             {
@@ -183,6 +204,7 @@
               "image":
               "./Images/Play/toy_train.PNG",
                 "alt":"train",
+                "name":"Train",
                 "boardName":"play"
             }
             
