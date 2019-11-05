@@ -29,7 +29,7 @@ app.use(require('express-session')({
 }));
 app.use(passport.initialize());
 app.use(flash());
-
+app.use(express.static('public'))
 
 /* Serve up static assets (usually on heroku) */
 if (process.env.NODE_ENV === "production") {
