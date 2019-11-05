@@ -25,6 +25,8 @@ import Landing from "./pages/Landing";
 import Login from './components/Login';
 import NewUserForm from "./pages/NewUserForm";
 import Go from "./pages/Go"
+import Eat from "./pages/Eat"
+import Play from "./pages/Play"
 
 
 
@@ -73,6 +75,9 @@ const AuthExample = () => (
 					<PrivateRoute exact path="/protected" component={ProtectedRoute} />
 					<Route path="/new" component={NewUserForm} />
 					<Route path="/go" component={Go} />
+					<Route path="/eat" component={Eat} />
+					<Route path="/play" component={Play} />
+					
 					{/* <PrivateRoute exact path="/protected" component={ProtectedRoute} /> */}
 					
 				</Switch>

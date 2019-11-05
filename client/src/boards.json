@@ -69,6 +69,7 @@
           "image":
             "./Images/Go/baseball.PNG",
             "alt":"baseball",
+            "name":"Baseball Park",
             "boardName":"go"
           
         },
@@ -77,6 +78,7 @@
           "image":
           "./Images/Go/Bathroom.PNG",
             "alt":"potty",
+        
             "boardName":"go"
         },
         {
