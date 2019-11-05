@@ -15,7 +15,7 @@
   color: white;
 }
 .background{
-  background: url("../src/Images/whitePuzzle.jpg");
+  /* background: url("../public/Images/whitePuzzle.jpg"); */
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
