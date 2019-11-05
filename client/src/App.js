@@ -74,9 +74,9 @@ const AuthExample = () => (
 					<Route exact path="/register" component={Register} />
 					<PrivateRoute exact path="/protected" component={ProtectedRoute} />
 					<Route path="/new" component={NewUserForm} />
-					<Route path="/go" component={Go} />
-					<Route path="/eat" component={Eat} />
-					<Route path="/play" component={Play} />
+					<Route exact path="/go" component={Go} />
+					<Route exact path="/eat" component={Eat} />
+					<Route exact path="/play" component={Play} />
 					
 					{/* <PrivateRoute exact path="/protected" component={ProtectedRoute} /> */}
 					

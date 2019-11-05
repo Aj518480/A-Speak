@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 import Card from "../../components/Card";
 import Boards from "../../boards.json"
 import Wrapper from "../../components/Wrapper"
+import PlainFooter from "../../components/PlainFooter"
+import Header from "../../components/Header"
 
 
 class Go extends Component {
@@ -14,6 +16,7 @@ class Go extends Component {
 	render(){
 		return(
 			<div>
+				<Header></Header>
 				<Wrapper>
 				{this.state.boards.go.map(board =>(
 					<Card 
@@ -25,6 +28,7 @@ class Go extends Component {
 					/>
 				))}
 				</Wrapper>
+				<PlainFooter></PlainFooter>
 			</div>
 		)
 	}

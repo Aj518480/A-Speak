@@ -5,15 +5,33 @@ import React, { Component } from 'react';
 import Card from "../../components/Card";
 import Boards from "../../boards.json"
 import Wrapper from "../../components/Wrapper"
+import PlainFooter from "../../components/PlainFooter"
+import Header from "../../components/Header"
 
 
 class Eat extends Component {
 	state = {
-		boards: Boards
+		boards: Boards,
+		message:""
+		
 	}
+handleClick=(imgName)=>{
+	this.setState({
+		message:imgName
+	})
+
+}
+
 	render(){
 		return(
 			<div>
+				
+					<Header
+					header={Boards.eat[0].boardName}
+					message={this.state.message}
+					/>
+			
+				
 				<Wrapper>
 				{this.state.boards.eat.map(board =>(
 					<Card 
@@ -21,10 +39,12 @@ class Eat extends Component {
 						id={board.id}
 						image={board.image}
 						name={board.name}
-						// handleClick={this.handleClick}
+						
+						handleClick={this.handleClick}
 					/>
 				))}
 				</Wrapper>
+				<PlainFooter></PlainFooter>
 			</div>
 		)
 	}
