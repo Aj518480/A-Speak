@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 // 	Link
 // } from 'react-router-dom';
 import Card from "../../components/Card";
-import Boards from "../../boards.json"
-import Wrapper from "../../components/Wrapper"
-import PlainFooter from "../../components/PlainFooter"
-import Header from "../../components/Header"
+import Boards from "../../boards.json";
+import Wrapper from "../../components/Wrapper";
+import PlainFooter from "../../components/PlainFooter";
+import HeaderGeneral from "../../components/HeaderGeneral";
+
 
 
 class Eat extends Component {
@@ -26,7 +27,7 @@ handleClick=(imgName)=>{
 		return(
 			<div>
 				
-					<Header
+					<HeaderGeneral
 					header={Boards.eat[0].boardName}
 					message={this.state.message}
 					/>
@@ -39,6 +40,7 @@ handleClick=(imgName)=>{
 						id={board.id}
 						image={board.image}
 						name={board.name}
+						grammar={board}
 						
 						handleClick={this.handleClick}
 					/>

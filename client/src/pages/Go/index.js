@@ -3,30 +3,42 @@ import React, { Component } from 'react';
 // 	Link
 // } from 'react-router-dom';
 import Card from "../../components/Card";
-import Boards from "../../boards.json"
-import Wrapper from "../../components/Wrapper"
-import PlainFooter from "../../components/PlainFooter"
-import Header from "../../components/Header"
+import Boards from "../../boards.json";
+import Wrapper from "../../components/Wrapper";
+import PlainFooter from "../../components/PlainFooter";
+import HeaderGeneral from '../../components/HeaderGeneral';
 
 
 class Go extends Component {
 	state = {
-		boards: Boards
+		boards: Boards,
+		message: ""
 	}
-	render(){
-		return(
+	handleClick = (imgName) => {
+		this.setState({
+			message: imgName
+		})
+
+	}
+	render() {
+		return (
 			<div>
-				<Header></Header>
+				<HeaderGeneral
+					header={Boards.go[0].boardName}
+					message={this.state.message}
+				/>
 				<Wrapper>
-				{this.state.boards.go.map(board =>(
-					<Card 
-						key={board.id}
-						id={board.id}
-						image={board.image}
-						name={board.name}
-						// handleClick={this.handleClick}
-					/>
-				))}
+					{this.state.boards.go.map(board => (
+						<Card
+							key={board.id}
+							id={board.id}
+							image={board.image}
+							name={board.name}
+							grammar={board.grammar}
+
+							handleClick={this.handleClick}
+						/>
+					))}
 				</Wrapper>
 				<PlainFooter></PlainFooter>
 			</div>
