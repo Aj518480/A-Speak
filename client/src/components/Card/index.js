@@ -10,9 +10,10 @@ function Card(props) {
           src={props.image}
           alt={props.alt}
           clicked={props.clicked}
-          onClick={() => props.handleClick(props.id)}
+          // onClick={() => props.handleClick(props.id)}
         />
       </div>
+      <p className="cardTitle">{props.name}</p>
     </div>
   );
 }
