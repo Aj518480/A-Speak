@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import Card from "../../components/Card";
 import Boards from "../../boards.json"
 import Wrapper from "../../components/Wrapper"
+import PlainFooter from "../../components/PlainFooter"
 
 
 class Play extends Component {
@@ -25,6 +26,7 @@ class Play extends Component {
 					/>
 				))}
 				</Wrapper>
+				<PlainFooter></PlainFooter>
 			</div>
 		)
 	}

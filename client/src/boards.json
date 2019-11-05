@@ -6,7 +6,7 @@
       "image":
         "./Images/Eat/Apple_Juice.PNG",
         "alt":"appleJuice",
-        "name":"Apple Juice",
+        "name":"apple juice",
         "boardName":"eat"
       
     },
@@ -15,7 +15,7 @@
       "image":
       "./Images/Eat/Apple.PNG",
         "alt":"apple",
-        "name":"Apple",
+        "name":"apple",
         "boardName":"eat"
     },
     {
@@ -23,7 +23,7 @@
       "image":
       "./Images/Eat/Baby_carrots.PNG",
         "alt":"babyCarrots",
-        "name":"Baby Carrots",
+        "name":"baby carrots",
         "boardName":"eat"
     },
     {
@@ -31,7 +31,7 @@
       "image":
         "./Images/Eat/Banana.PNG",
         "alt":"banana",
-        "name":"Banana",
+        "name":"banana",
         "boardName":"eat"
     },
     {
@@ -39,7 +39,7 @@
       "image":
       "./Images/Eat/Chicken_Nuggets.PNG",
         "alt":"chickenNuggets",
-        "name":"Chicken Nuggets",
+        "name":"chicken nuggets",
         "boardName":"eat"
     },
     {
@@ -47,7 +47,7 @@
       "image":
         "./Images/Eat/glass_of_water.PNG",
         "alt":"glassOfWater",
-        "name":"Water",
+        "name":"water",
         "boardName":"eat"
     },
     {
@@ -55,7 +55,7 @@
       "image":
         "./Images/Eat/Mac_and_Cheese.PNG",
         "alt":"macAndCheese",
-        "name":"Mac and Cheese",
+        "name":"mac and cheese",
         "boardName":"eat"
     },
     {
@@ -63,7 +63,7 @@
       "image":
       "./Images/Eat/Peanut_Butter_and_Jelly.PNG",
         "alt":"peanutAndJelly",
-        "name":"Sandwich",
+        "name":"sandwich",
         "boardName":"eat"
     }
     
