@@ -8,7 +8,8 @@
         "alt":"appleJuice",
         "name":"Apple Juice",
         "boardName":"eat",
-        "grammar":"drink apple juice."
+        "grammar":"drink apple juice.",
+        "sound":"./Sounds/appleJuice.mp3"
       
     },
     {
@@ -18,7 +19,8 @@
         "alt":"apple",
         "name":"Apple",
         "boardName":"eat",
-        "grammar":"eat an apple."
+        "grammar":"eat an apple.",
+        "sound":"./Sounds/apple.mp3"
 
     },
     {
@@ -28,7 +30,8 @@
         "alt":"babyCarrots",
         "name":"Baby Carrots",
         "boardName":"eat",
-        "grammar":"eat baby carrots."
+        "grammar":"eat baby carrots.",
+        "sound":"./Sounds/babyCarrots.mp3"
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
         "alt":"banana",
         "name":"banana",
         "boardName":"eat",
-        "grammar":"eat a banana."
+        "grammar":"eat a banana.",
+        "sound":"./Sounds/banana.mp3"
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
         "alt":"chickenNuggets",
         "name":"Chicken Nuggets",
         "boardName":"eat",
-        "grammar":"eat chicken nuggets."
+        "grammar":"eat chicken nuggets.",
+        "sound":"./Sounds/chickenNuggets.mp3"
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
         "alt":"glassOfWater",
         "name":"Water",
         "boardName":"eat",
-        "grammar":"drink water."
+        "grammar":"drink water.",
+        "sound":"./Sounds/water.mp3"
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
         "alt":"macAndCheese",
         "name":"Mac and Cheese",
         "boardName":"eat",
-        "grammar":"eat mac and cheese."
+        "grammar":"eat mac and cheese.",
+        "sound":"./Sounds/macAndCheese.mp3"
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
         "alt":"peanutAndJelly",
         "name":"Sandwich",
         "boardName":"eat",
-        "grammar":"eat a sandwich."
+        "grammar":"eat a sandwich.",
+        "sound":"./Sounds/sandwich.mp3"
     }
     
 
@@ -88,7 +96,8 @@
             "alt":"baseball",
             "name":"Baseball Park",
             "boardName":"go",
-            "grammar":"go to the Baseball Park."
+            "grammar":"go to the Baseball Park.",
+            "sound":"./Sounds/baseballPark.mp3"
           
         },
         {
@@ -98,7 +107,8 @@
             "alt":"potty",
             "name":"Bathroom",
             "boardName":"go",
-            "grammar":"go to the bathroom."
+            "grammar":"go to the bathroom.",
+            "sound":"./Sounds/bathroom.mp3"
         },
         {
           "id": 11,
@@ -107,7 +117,8 @@
             "alt":"bikeRiding",
             "name":"Bike Riding",
             "boardName":"go",
-            "grammar":"go bike riding."
+            "grammar":"go bike riding.",
+            "sound":"./Sounds/bikeRiding.mp3"
         },
         {
           "id": 12,
@@ -116,7 +127,8 @@
             "alt":"bowling",
             "name":"Bowling alley",
             "boardName":"go",
-            "grammar":"go to the bowling alley."
+            "grammar":"go to the bowling alley.",
+            "sound":"./Sounds/bowling.mp3"
         },
         {
           "id": 13,
@@ -125,7 +137,8 @@
             "alt":"library",
             "name":" Library",
             "boardName":"go",
-            "grammar":"go to the library."
+            "grammar":"go to the library.",
+            "sound":"./Sounds/library.mp3"
         },
         {
           "id": 14,
@@ -134,7 +147,8 @@
             "alt":"park",
             "name":"Park",
             "boardName":"go",
-            "grammar":"go to the park."
+            "grammar":"go to the park.",
+            "sound":"./Sounds/park.mp3"
         },
         {
           "id": 15,
@@ -143,7 +157,8 @@
             "alt":"pool",
             "name":"Pool",
             "boardName":"go",
-            "grammar":"go to the pool."
+            "grammar":"go to the pool.",
+            "sound":"./Sounds/pool.mp3"
         },
         {
           "id": 16,
@@ -152,7 +167,8 @@
             "alt":"school",
             "name":"School",
             "boardName":"go",
-            "grammar":"go to school."
+            "grammar":"go to school.",
+            "sound":"./Sounds/school.mp3"
         }
         
     
