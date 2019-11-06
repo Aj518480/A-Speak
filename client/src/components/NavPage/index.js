@@ -1,4 +1,12 @@
 import React from "react";
+import {
+	BrowserRouter as Router,
+	Route,
+	Redirect,
+	Switch,
+    withRouter,
+    Link
+} from 'react-router-dom';
 import "./style.css";
 
 
@@ -8,8 +16,8 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-primary bg-light">
 
-                <a className="navbar-brand" href="/"><img src="https://www.pinclipart.com/picdir/big/19-192852_simplistic-puzzle-piece-coloring-page-pieces-free-clip.png" height="30" className="d-inline-block align-top"
-                    alt="mdb logo" /> A-Speak</a>
+                <Link className="navbar-brand" to="/new_user"><img src="https://www.pinclipart.com/picdir/big/19-192852_simplistic-puzzle-piece-coloring-page-pieces-free-clip.png" height="30" className="d-inline-block align-top"
+                    alt="mdb logo" /> A-Speak</Link>
 
                 {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                     aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
