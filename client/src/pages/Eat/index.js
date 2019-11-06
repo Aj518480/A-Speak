@@ -14,9 +14,13 @@ import HeaderGeneral from "../../components/HeaderGeneral";
 class Eat extends Component {
 	state = {
 		boards: Boards,
+
 		message:"",
 		soundStatus: Sound.status.STOPPED,
 		currentCard: ""
+
+		message:"" 
+
 		
 	}
 	handleClick = (imgName, id) => {

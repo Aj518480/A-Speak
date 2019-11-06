@@ -27,6 +27,7 @@ import NewUserForm from "./pages/NewUserForm";
 import Go from "./pages/Go"
 import Eat from "./pages/Eat"
 import Play from "./pages/Play"
+import Uploader from "./pages/Uploader"
 
 
 
@@ -63,7 +64,7 @@ const AuthExample = () => (
 				</ul> */}
 				{/* <Button>Log In</Button>
 				<Button>Sign Up</Button> */}
-				<AuthButton />
+				{/* <AuthButton /> */}
 				<Switch>
 
 					
@@ -73,10 +74,11 @@ const AuthExample = () => (
 					<Route exact path="/login" component={Login}/>
 					<Route exact path="/register" component={Register} />
 					<PrivateRoute exact path="/protected" component={ProtectedRoute} />
-					<Route path="/new" component={NewUserForm} />
-					<Route exact path="/go" component={Go} />
-					<Route exact path="/eat" component={Eat} />
-					<Route exact path="/play" component={Play} />
+					<PrivateRoute exact path="/new_user" component={NewUserForm} />
+					<PrivateRoute exact path="/go" component={Go} />
+					<PrivateRoute exact path="/eat" component={Eat} />
+					<PrivateRoute exact path="/play" component={Play} />
+					<PrivateRoute exact path="/uploader" component={Uploader} />
 					
 					{/* <PrivateRoute exact path="/protected" component={ProtectedRoute} /> */}
 					

@@ -22,10 +22,12 @@ class NewUserForm extends React.Component {
                 
                 <Container>
                 <ul style={listStyle}>
-                    <li><Link to="/"><Button style={btnStyle}>Eat</Button></Link></li>
-                    <li><Link to="/"><Button>Play</Button>
+                    <li><Link to="/eat"><Button style={btnStyle}>Eat</Button></Link></li>
+                    <li><Link to="/play"><Button>Play</Button>
                     </Link></li>
-                    <li><Link to="/"><Button>Go</Button>
+                    <li><Link to="/go"><Button>Go</Button>
+                    </Link></li>
+                    <li><Link to="/uploader"><Button>New</Button>
                     </Link></li>
                 </ul>
                 </Container>
