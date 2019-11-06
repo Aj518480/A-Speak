@@ -17,8 +17,7 @@ class Eat extends Component {
 
 		message:"",
 		soundStatus: Sound.status.STOPPED,
-		currentCard: ""
-
+		currentCard: "",
 		message:"" 
 
 		
