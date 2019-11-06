@@ -16,7 +16,7 @@ class Eat extends Component {
 		message:""
 		
 	}
-handleClick=(imgName)=>{
+handleClick = (imgName) => {
 	this.setState({
 		message:imgName
 	})
@@ -26,7 +26,6 @@ handleClick=(imgName)=>{
 	render(){
 		return(
 			<div>
-				
 					<HeaderGeneral
 					header={Boards.eat[0].boardName}
 					message={this.state.message}
@@ -40,7 +39,7 @@ handleClick=(imgName)=>{
 						id={board.id}
 						image={board.image}
 						name={board.name}
-						grammar={board}
+						grammar={board.grammar}
 						
 						handleClick={this.handleClick}
 					/>
