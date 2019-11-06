@@ -55,6 +55,8 @@ module.exports = {
     test: function(req , res, next){
         console.log(`Ping Dinger ${req.statusCode}`);
 		res.status(200).send("Dong!");
-    }
+	},
+	
+	// make API request to mongo for user info
 
 };

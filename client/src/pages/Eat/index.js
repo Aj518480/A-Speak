@@ -13,7 +13,7 @@ import HeaderGeneral from "../../components/HeaderGeneral";
 class Eat extends Component {
 	state = {
 		boards: Boards,
-		message:""
+		message:"" 
 		
 	}
 handleClick = (imgName) => {
