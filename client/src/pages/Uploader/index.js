@@ -4,20 +4,28 @@ import React, { Component } from 'react';
 // } from 'react-router-dom';
 import Card from "../../components/Card";
 // import Boards from "../../boards.json"
-import Wrapper from "../../components/Wrapper"
-import PlainFooter from "../../components/PlainFooter"
+import Wrapper from "../../components/Wrapper";
+import PlainFooter from "../../components/PlainFooter";
+import Button from "../../components/Buttons";
+import UploadForm from "../../components/UploadForm"
+
+
 
 class Uploader extends Component {
 // 	state = {
-// 		boards: Boards,
-// 		message:"" 
+// 		selected: null
 		
 // 	}
-handleClick = () =>{
-	return (
-        console.log("Clicked")
-        
-    )
+handleClick = event =>{
+		console.log("Clicked");
+		// console.log(event.target.files[0])
+		// this.setState({
+		// 	selected: event.target.files[0]
+		// })
+}
+
+handleUpload = () => {
+	console.log("uploaded")
 }
 
 	render(){
@@ -27,10 +35,21 @@ handleClick = () =>{
 			
 				
 				<Wrapper>
-					<Card 
+
+				{/* <input 
+				style={{display: "none"}}
+				type="file" 
+				onChange={this.handleClick}
+				ref={fileInput => this.fileInput = fileInput}
+				/> */}
+
+					{/* <Card 
                         image={`https://www.pngfind.com/pngs/m/66-661092_png-file-upload-image-icon-png-transparent-png.png`}
-                        handleClick={this.handleClick}
-                    />
+						onClick={() => this.fileInput.click()}
+					/> */}
+					{/* <Button onClick={() => this.fileInput.click()}>Choose Image</Button> */}
+					<UploadForm />
+					{/* <Button handleUpload={this.handleUpload}>Upload</Button> */}
 				</Wrapper>
 				<PlainFooter />
 			</div>
