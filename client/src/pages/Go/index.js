@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import {
 // 	Link
 // } from 'react-router-dom';
+import Sound from 'react-sound';
 import Card from "../../components/Card";
 import Boards from "../../boards.json";
 import Wrapper from "../../components/Wrapper";
@@ -12,11 +13,23 @@ import HeaderGeneral from '../../components/HeaderGeneral';
 class Go extends Component {
 	state = {
 		boards: Boards,
-		message: ""
+		message: "",
+		soundStatus: Sound.status.STOPPED,
+		currentCard: ""
 	}
-	handleClick = (imgName) => {
+	handleClick = (imgName, id) => {
+		for (let i = 0; i < Boards.go.length; i++) {
+			if (id === Boards.go[i].id){
+				let choosenCard = Boards.go[i]
+				this.setState({
+					currentCard: choosenCard
+				})
+			}
+		}
+		console.log(this.state.currentCard)
 		this.setState({
-			message: imgName
+			message: imgName,
+			soundStatus: Sound.status.PLAYING
 		})
 
 	}
@@ -35,7 +48,8 @@ class Go extends Component {
 							image={board.image}
 							name={board.name}
 							grammar={board.grammar}
-
+							sound={this.state.currentCard.sound}
+							soundStatus={this.state.soundStatus}
 							handleClick={this.handleClick}
 						/>
 					))}
