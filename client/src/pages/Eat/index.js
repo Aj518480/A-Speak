@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-// import {
-// 	Link
-// } from 'react-router-dom';
+
+
 import Sound from 'react-sound';
 import Card from "../../components/Card";
 import Boards from "../../boards.json";
 import Wrapper from "../../components/Wrapper";
+import BackButton from "../../components/BackButton"
 import PlainFooter from "../../components/PlainFooter";
 import HeaderGeneral from "../../components/HeaderGeneral";
 
@@ -61,7 +61,9 @@ class Eat extends Component {
 						handleClick={this.handleClick}
 					/>
 				))}
+				
 				</Wrapper>
+				<BackButton></BackButton>
 				<PlainFooter></PlainFooter>
 			</div>
 		)
