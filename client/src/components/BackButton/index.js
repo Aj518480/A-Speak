@@ -10,7 +10,7 @@ class BackButton extends Component {
     render() {
         return(
             <div>
-                <Link to="/new_user"><button className="backButton fas fa-arrow-circle-left"></button></Link>
+                <Link to="/new_user" className="backButton fas fa-arrow-circle-left"></Link>
             </div>  
         )
     }
