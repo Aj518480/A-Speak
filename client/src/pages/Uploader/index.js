@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import Card from "../../components/Card";
 // import Boards from "../../boards.json"
 import Wrapper from "../../components/Wrapper";
+import BackButton from "../../components/BackButton"
 import PlainFooter from "../../components/PlainFooter";
 import Button from "../../components/Buttons";
 import UploadForm from "../../components/UploadForm"
@@ -51,6 +52,7 @@ handleUpload = () => {
 					<UploadForm />
 					{/* <Button handleUpload={this.handleUpload}>Upload</Button> */}
 				</Wrapper>
+				<BackButton></BackButton>
 				<PlainFooter />
 			</div>
 		)
