@@ -56,7 +56,7 @@ module.exports = {
     test: function(req , res, next){
         console.log(`Ping Dinger ${req.statusCode}`);
 		res.status(200).send("Dong!");
-	},
+	}
 	// findUser: function(req, res, next){
 	// 	console.log(req.body);
 	// 	Account.

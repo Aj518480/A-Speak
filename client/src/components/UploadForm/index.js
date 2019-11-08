@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./style.css";
+import API from "../../utils/API";
 
 
 class UploadForm extends React.Component {
@@ -63,6 +64,24 @@ class UploadForm extends React.Component {
                     }
                 })
         
+            }
+            
+            addCard = () => {
+
+                const card = {
+                    boardName: "Test",
+                    cards:{
+                        image: this.state.uploadedFile.filePath,
+                        cardTitle: this.state.title
+                    }
+                    
+                }
+                API.saveBoard(card)
+                    .then(data => console.log(data))
+                    .catch(err => console.log(err));
+
+
+
             }
 
     render() {
@@ -130,7 +149,7 @@ class UploadForm extends React.Component {
             <p className="cardTitle">{ this.state.title } </p>
             </div>
             <div className="col">
-            <button type="addCard" value="Card" className="btn btn-primary btn-block mt-4"> Add + </button>
+            <button type="addCard" value="Card" className="btn btn-primary btn-block mt-4" onClick={this.addCard}> Add + </button>
             </div>
             {/* <div className="col-md-5 m-auto">
             <h3 className="text-center">{ this.state.title }</h3>
