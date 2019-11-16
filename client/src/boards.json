@@ -5,10 +5,10 @@
       "id": 1,
       "image":
         "./Images/Eat/appleJuice.PNG",
-        "alt":"appleJuice",
+        "alt":"apple juice.",
         "name":"Apple Juice",
         "boardName":"eat",
-        "grammar":"drink apple juice.",
+        "grammar":"drink ",
         "sound":"./Sounds/appleJuice.mp3"
       
     },
@@ -16,10 +16,10 @@
       "id": 2,
       "image":
       "./Images/Eat/apple.PNG",
-        "alt":"apple",
+        "alt":"apple.",
         "name":"Apple",
         "boardName":"eat",
-        "grammar":"eat an apple.",
+        "grammar":"eat an ",
         "sound":"./Sounds/apple.mp3"
 
     },
@@ -27,60 +27,60 @@
       "id": 3,
       "image":
       "./Images/Eat/babyCarrots.PNG",
-        "alt":"babyCarrots",
+        "alt":"baby carrots.",
         "name":"Baby Carrots",
         "boardName":"eat",
-        "grammar":"eat baby carrots.",
+        "grammar":"eat ",
         "sound":"./Sounds/babyCarrots.mp3"
     },
     {
       "id": 4,
       "image":
         "./Images/Eat/banana.PNG",
-        "alt":"banana",
+        "alt":"banana.",
         "name":"banana",
         "boardName":"eat",
-        "grammar":"eat a banana.",
+        "grammar":"eat a ",
         "sound":"./Sounds/banana.mp3"
     },
     {
       "id": 5,
       "image":
       "./Images/Eat/chickenNuggets.PNG",
-        "alt":"chickenNuggets",
+        "alt":"chicken nuggets",
         "name":"Chicken Nuggets",
         "boardName":"eat",
-        "grammar":"eat chicken nuggets.",
+        "grammar":"eat ",
         "sound":"./Sounds/chickenNuggets.mp3"
     },
     {
       "id": 6,
       "image":
         "./Images/Eat/water.PNG",
-        "alt":"glassOfWater",
+        "alt":"water.",
         "name":"Water",
         "boardName":"eat",
-        "grammar":"drink water.",
+        "grammar":"drink ",
         "sound":"./Sounds/water.mp3"
     },
     {
       "id": 7,
       "image":
         "./Images/Eat/macAndCheese.PNG",
-        "alt":"macAndCheese",
+        "alt":"mac and cheese.",
         "name":"Mac and Cheese",
         "boardName":"eat",
-        "grammar":"eat mac and cheese.",
+        "grammar":"eat ",
         "sound":"./Sounds/macAndCheese.mp3"
     },
     {
       "id": 8,
       "image":
       "./Images/Eat/peanutButterAndJelly.PNG",
-        "alt":"peanutAndJelly",
+        "alt":"sandwich.",
         "name":"Sandwich",
         "boardName":"eat",
-        "grammar":"eat a sandwich.",
+        "grammar":"eat a ",
         "sound":"./Sounds/sandwich.mp3"
     }
     
@@ -93,10 +93,10 @@
           "id": 9,
           "image":
             "./Images/Go/baseball.PNG",
-            "alt":"baseball",
+            "alt":"Baseball Park.",
             "name":"Baseball Park",
             "boardName":"go",
-            "grammar":"go to the Baseball Park.",
+            "grammar":"go to the ",
             "sound":"./Sounds/baseballPark.mp3"
           
         },
@@ -104,70 +104,70 @@
           "id": 10,
           "image":
           "./Images/Go/bathroom.PNG",
-            "alt":"potty",
+            "alt":"bathroom.",
             "name":"Bathroom",
             "boardName":"go",
-            "grammar":"go to the bathroom.",
+            "grammar":"go to the ",
             "sound":"./Sounds/bathroom.mp3"
         },
         {
           "id": 11,
           "image":
           "./Images/Go/bikeRiding.PNG",
-            "alt":"bikeRiding",
+            "alt":"bike riding.",
             "name":"Bike Riding",
             "boardName":"go",
-            "grammar":"go bike riding.",
+            "grammar":"go ",
             "sound":"./Sounds/bikeRiding.mp3"
         },
         {
           "id": 12,
           "image":
           "./Images/Go/bowling.PNG",
-            "alt":"bowling",
+            "alt":"bowling alley.",
             "name":"Bowling alley",
             "boardName":"go",
-            "grammar":"go to the bowling alley.",
+            "grammar":"go to the ",
             "sound":"./Sounds/bowling.mp3"
         },
         {
           "id": 13,
           "image":
           "./Images/Go/library.PNG",
-            "alt":"library",
+            "alt":"library.",
             "name":" Library",
             "boardName":"go",
-            "grammar":"go to the library.",
+            "grammar":"go to the ",
             "sound":"./Sounds/library.mp3"
         },
         {
           "id": 14,
           "image":
           "./Images/Go/parkSlide.PNG",
-            "alt":"park",
+            "alt":"park.",
             "name":"Park",
             "boardName":"go",
-            "grammar":"go to the park.",
+            "grammar":"go to the ",
             "sound":"./Sounds/park.mp3"
         },
         {
           "id": 15,
           "image":
             "./Images/Go/pool.PNG",
-            "alt":"pool",
+            "alt":"pool.",
             "name":"Pool",
             "boardName":"go",
-            "grammar":"go to the pool.",
+            "grammar":"go to the ",
             "sound":"./Sounds/pool.mp3"
         },
         {
           "id": 16,
           "image":
           "./Images/Go/school.PNG",
-            "alt":"school",
+            "alt":"school.",
             "name":"School",
             "boardName":"go",
-            "grammar":"go to school.",
+            "grammar":"go to ",
             "sound":"./Sounds/school.mp3"
         }
         
@@ -179,10 +179,10 @@
               "id": 17,
               "image":
               "./Images/Play/ball.PNG",
-                "alt":"soccer",
+                "alt":"ball.",
                 "name":"Ball",
                 "boardName":"play",
-                "grammar":"play with the ball.",
+                "grammar":"play with the ",
                 "sound":"./Sounds/ball.mp3"
 
               
@@ -191,70 +191,70 @@
               "id": 18,
               "image":
               "./Images/Play/blocks.PNG",
-                "alt":"blocks",
+                "alt":"blocks.",
                 "name":"Blocks",
                 "boardName":"play",
-                "grammar":"play with blocks.",
+                "grammar":"play with ",
                 "sound":"./Sounds/blocks.mp3"
             },
             {
               "id": 19,
               "image":
               "./Images/Play/doll.PNG",
-                "alt":"doll",
+                "alt":"doll.",
                 "name":"Doll",
                 "boardName":"play",
-                "grammar":"play with the doll.",
+                "grammar":"play with the ",
                 "sound":"./Sounds/doll.mp3"
             },
             {
               "id": 20,
               "image":
               "./Images/Play/robot.PNG",
-                "alt":"robot",
+                "alt":"robot.",
                 "name":"Robot",
                 "boardName":"play",
-                "grammar":"play with the robot.",
+                "grammar":"play with the ",
                 "sound":"./Sounds/robot.mp3"
             },
             {
               "id": 21,
               "image":
               "./Images/Play/tablet.PNG",
-                "alt":"tabletAndPhone",
+                "alt":"tablet or phone.",
                 "name":"Tablet",
                 "boardName":"play",
-                "grammar":"play with the tablet or phone.",
+                "grammar":"play with the ",
                 "sound":"./Sounds/tabletPhone.mp3"
             },
             {
               "id": 22,
               "image":
               "./Images/Play/teddyBear.PNG",
-                "alt":"teddyBear",
+                "alt":"teddy bear",
                 "name":"Teddy Bear",
                 "boardName":"play",
-                "grammar":"play with the teddy bear.",
+                "grammar":"play with the ",
                 "sound":"./Sounds/teddyBear.mp3"
             },
             {
               "id": 23,
               "image":
               "./Images/Play/toyCar.PNG",
-                "alt":"cars",
+                "alt":"car.",
                 "name":"Car",
                 "boardName":"play",
-                "grammar":"play with the car.",
+                "grammar":"play with the ",
                 "sound":"./Sounds/car.mp3"
             },
             {
               "id": 24,
               "image":
               "./Images/Play/toyTrain.PNG",
-                "alt":"train",
+                "alt":"train.",
                 "name":"Train",
                 "boardName":"play",
-                "grammar":"play with the train.",
+                "grammar":"play with the ",
                 "sound":"./Sounds/train.mp3"
             }
             

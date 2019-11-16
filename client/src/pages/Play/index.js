@@ -39,8 +39,8 @@ class Play extends Component {
 		return(
 			<div>
 				<HeaderGeneral
-					header={Boards.go[0].boardName}
 					message={this.state.message}
+					alt={this.state.currentCard.alt}
 				/>
 				<Wrapper>
 				{this.state.boards.play.map(board =>(

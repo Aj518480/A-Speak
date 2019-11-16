@@ -13,12 +13,13 @@ import HeaderGeneral from "../../components/HeaderGeneral";
 
 class Eat extends Component {
 	state = {
+		
 		boards: Boards,
-
 		message:"",
 		soundStatus: Sound.status.STOPPED,
 		currentCard: "",
-		message:"" 
+		message:"" ,
+		
 
 		
 	}
@@ -28,25 +29,30 @@ class Eat extends Component {
 				let choosenCard = Boards.eat[i]
 				this.setState({
 					currentCard: choosenCard
+			
 				})
 			}
 		}
-		console.log(this.state.currentCard)
+		// console.log(this.state.currentCard)
 		this.setState({
 			message: imgName,
-			soundStatus: Sound.status.PLAYING
+			soundStatus: Sound.status.PLAYING,
 		})
+		
+		
 
 	}
 
 	render(){
 		return(
 			<div>
+				
 					<HeaderGeneral
-					header={Boards.eat[0].boardName}
+					
 					message={this.state.message}
+					alt={this.state.currentCard.alt}
 					/>
-			
+				
 				
 				<Wrapper>
 				{this.state.boards.eat.map(board =>(

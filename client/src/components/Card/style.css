@@ -18,11 +18,14 @@
     /* background:#6CADDC; */
     
     
+    
   }
   .card > .img-container > img {
     width: 225px;
     max-width: 100%;
     height:175px;
+    
+    
   }
 
   .cardTitle{
