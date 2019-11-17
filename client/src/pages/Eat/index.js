@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 import Sound from 'react-sound';
 import Card from "../../components/Card";
 import Boards from "../../boards.json";
@@ -20,16 +19,17 @@ class Eat extends Component {
 		currentCard: "",
 		message:"" ,
 		
-
+		
 		
 	}
+	
 	handleClick = (imgName, id) => {
 		for (let i = 0; i < Boards.eat.length; i++) {
 			if (id === Boards.eat[i].id){
 				let choosenCard = Boards.eat[i]
 				this.setState({
-					currentCard: choosenCard
-			
+					currentCard: choosenCard,
+					
 				})
 			}
 		}
@@ -37,6 +37,7 @@ class Eat extends Component {
 		this.setState({
 			message: imgName,
 			soundStatus: Sound.status.PLAYING,
+			
 		})
 		
 		
@@ -56,7 +57,10 @@ class Eat extends Component {
 				
 				<Wrapper>
 				{this.state.boards.eat.map(board =>(
+					
+					
 					<Card 
+					
 						key={board.id}
 						id={board.id}
 						image={board.image}
@@ -66,9 +70,11 @@ class Eat extends Component {
 						soundStatus={this.state.soundStatus}
 						handleClick={this.handleClick}
 					/>
+					
 				))}
 				
 				</Wrapper>
+				
 				<BackButton></BackButton>
 				<PlainFooter></PlainFooter>
 			</div>

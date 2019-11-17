@@ -7,7 +7,7 @@
     padding: 20px;
     justify-content: space-around;
     align-content: flex-start;
-    overflow: auto;
+    overflow: hidden;
     padding-right:200px;
     padding-left:200px;
   }
