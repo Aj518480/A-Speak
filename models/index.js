@@ -1,4 +1,5 @@
 module.exports = {
   Account: require("./account"),
-  Board: require("./board")
+  Board: require("./board"),
+  Card: require("./cards")
 };
