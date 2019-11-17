@@ -16,5 +16,11 @@ export default {
   // Saves a book to the database
   saveBoard: function(boardData) {
     return axios.post("/api/boards", boardData);
+  },
+  saveCard: function(cardData) {
+    return axios.post("/api/cards", cardData);
+  },
+  getCards: function(cardData) {
+    return axios.get("/api/cards", cardData);
   }
 };

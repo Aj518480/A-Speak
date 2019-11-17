@@ -68,15 +68,27 @@ class UploadForm extends React.Component {
             
             addCard = () => {
 
+                // const card = {
+                //     boardName: "Test",
+                //     cards:{
+                //         image: this.state.uploadedFile.filePath,
+                //         cardTitle: this.state.title
+                //     }
+                    
+                // }
+                // API.saveBoard(card)
+                //     .then(data => console.log(data))
+                //     .catch(err => console.log(err));
+
                 const card = {
-                    boardName: "Test",
+
                     cards:{
                         image: this.state.uploadedFile.filePath,
                         cardTitle: this.state.title
                     }
                     
                 }
-                API.saveBoard(card)
+                API.saveCard(card)
                     .then(data => console.log(data))
                     .catch(err => console.log(err));
 

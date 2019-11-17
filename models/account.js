@@ -8,7 +8,7 @@ const Account = new Schema({
     boards: [
         {
             type: Schema.Types.ObjectId,
-            ref: "Boards"
+            ref: "boards"
         }
     ]
 });
