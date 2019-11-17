@@ -39,10 +39,27 @@ module.exports = {
   },
   update: function(req, res) {
     db.Board
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
+      //.findOneAndUpdate({ _id: req.params.id }, req.body)
       //.update({ _id: req.params.id }, req.body)
       //.findOneAndUpdate({"cards.$": req.body})
-      .then(dbModel => res.json(dbModel))
+      .findOneAndUpdate({ _id: req.params.id }, req.body)
+      //.then(dbModel => res.json(dbModel))
+      .then(dbModel => 
+        res.json(dbModel),
+        { $push: 
+            {
+              cards: 
+              {
+                $each: [
+                  {
+                    image, 
+                    cardTitle 
+                  }
+                ]
+              }
+            }
+          }
+        )
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
