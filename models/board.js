@@ -4,13 +4,13 @@ const Schema = mongoose.Schema;
 
 const Board = new Schema({
     boardName: String,
-    // cards: []
-    cards: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: "cards"
-        }
-    ]
+    cards: []
+    // cards: [
+    //     {
+    //         type: Schema.Types.ObjectId,
+    //         ref: "cards"
+    //     }
+    // ]
 });
 
 // Board.plugin(passportLocalMongoose);

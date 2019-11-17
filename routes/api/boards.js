@@ -4,7 +4,8 @@ const boardsController = require("../../controllers/boardsController");
 // Matches with "/api/boards"
 router.route("/")
   .get(boardsController.findAll)
-  .post(boardsController.create);
+  .post(boardsController.create)
+  .put(boardsController.update);
 
 // Matches with "/api/boards/:id"
 router
