@@ -56,12 +56,12 @@ module.exports = {
     test: function(req , res, next){
         console.log(`Ping Dinger ${req.statusCode}`);
 		res.status(200).send("Dong!");
-	}
-	// findUser: function(req, res, next){
-	// 	console.log(req.body);
-	// 	Account.
-	// }
+	},
 	// make API request to mongo for user info
+	findUser: function(req, res, next){
+		console.log(req.body);
+		Account.getUser()
+	}
 	// makeBoard: function(req, res, next){
 	// 	Board
 	// 		.create(req.body)

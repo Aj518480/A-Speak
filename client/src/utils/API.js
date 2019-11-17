@@ -18,7 +18,8 @@ export default {
     return axios.post("/api/boards", boardData);
   },
   saveCard: function(cardData) {
-    return axios.post("/api/cards", cardData);
+    // return axios.post("/api/cards", cardData);
+    return axios.put("/api/boards", cardData);
   },
   getCards: function(cardData) {
     return axios.get("/api/cards", cardData);
