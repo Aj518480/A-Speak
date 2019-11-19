@@ -11,30 +11,33 @@ module.exports = {
   },
   findById: function(req, res) {
     db.Board
-      .findById(req.params.id)
+      .findById(req.params.username)
+      .populate("cards")
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  create: function(req, res) {
-    db.Board
-      .create(req.body)
-      .then(dbModel => res.json(dbModel))
-    //   $push card to board
-    // { $push: 
-    //   {
-    //     cards: 
-    //     {
-    //       $each: [
-    //         {
-    //           image: , 
-    //           cardTitle: 
-    //         }
-    //       ]
-    //     }
-    //   }
-    // }
-      // .populate('cards')
+  findUserByUsername: function(req, res) {
+    db.Account
+      .find({username: req.params.username})
+      .populate("boards")
+      .then(dataUser => res.json(dataUser))
       .catch(err => res.status(422).json(err));
+  },
+  create: function(req, res) {
+    let boardData = ""
+    db.Board
+        .create(req.body)
+        .then(data => {
+          boardData = {boardData: data};
+          return db.Account.findOneAndUpdate({ username: req.params.username }, { $push: { boards: data._id } }, { new: true });
+          })
+        .then(data => {
+            
+            res.json({data:data, boardData: boardData})
+        })
+        .catch(function (err) {
+            res.json(err);
+        });
 
   },
   update: function(req, res) {
