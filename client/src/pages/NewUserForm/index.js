@@ -2,9 +2,11 @@ import React from 'react'
 import PlainFooter from '../../components/PlainFooter';
 import { Container } from '../../components/Grid';
 import Button from "../../components/Buttons";
+import { usernameTransfer } from '../../components/Login';
 import {
 	Link
 } from 'react-router-dom';
+import API from "../../utils/API";
 
 const listStyle = {
 	color: 'cornflowerblue',
@@ -16,6 +18,30 @@ const btnStyle = {
 };
 
 class NewUserForm extends React.Component {
+
+    state = {
+        boards: []
+    }
+
+    componentDidMount(){
+        API.getUserBoard(usernameTransfer)
+                .then(data => {
+                    console.log(data)
+                    this.setState({
+                        boards: data.data[0].boards
+                    })
+                })
+                .catch(err => console.log(err))
+
+
+
+
+    }
+
+
+
+
+
 	render() {
 		return (
             <div>
@@ -27,6 +53,10 @@ class NewUserForm extends React.Component {
                     </Link></li>
                     <li><Link to="/go"><Button>Go</Button>
                     </Link></li>
+                    {this.state.boards.map((item, i)=>(
+                    <li><Link key={i} to="/temp"><Button>{item.boardName}</Button>
+                    </Link></li>
+                    ))}
                     <li><Link to="/uploader"><Button>New</Button>
                     </Link></li>
                 </ul>

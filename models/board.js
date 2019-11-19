@@ -4,15 +4,14 @@ const Schema = mongoose.Schema;
 
 const Board = new Schema({
     boardName: String,
-    cards: []
-    // cards: [
-    //     {
-    //         type: Schema.Types.ObjectId,
-    //         ref: "cards"
-    //     }
-    // ]
+    cards: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "card"
+        }
+    ]
 });
 
 // Board.plugin(passportLocalMongoose);
 
-module.exports = mongoose.model('boards', Board);
+module.exports = mongoose.model('board', Board);
