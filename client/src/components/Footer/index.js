@@ -84,8 +84,8 @@ function Footer() {
   
 </footer>
 
-
 </div>
+
 
   );
 }

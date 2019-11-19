@@ -1,0 +1,16 @@
+.loginWrapper{
+    
+   
+    height: 100%;
+    display:block;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: space-around;
+    align-content: center;
+    overflow: hidden;
+    margin: 100px;
+    margin-bottom: 200px;
+    
+    
+  
+}

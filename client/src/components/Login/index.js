@@ -2,8 +2,9 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import LoginForm from "../LoginForm";
 import Auth from "../../utils/Auth";
-import { Container } from "../Grid";
+
 import PlainFooter from '../PlainFooter';
+import LoginWrapper from "../LoginWrapper"
 import "./style.css"
 //Uses the Auth methods to actually login with the LoginForm Component.
 class Login extends React.Component {
@@ -47,10 +48,12 @@ class Login extends React.Component {
 		
 		return (
 			<div>
-				<Container>
+				<LoginWrapper>
+				
 				<p className="loginP">You must log in to view the page at {from.pathname}</p>
 				<LoginForm onLogin={this.login} />
-				</Container>
+				
+				</LoginWrapper>
 				<PlainFooter></PlainFooter>
 			</div>
 		)

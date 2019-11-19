@@ -3,10 +3,12 @@
 }
 .avatar{
     padding:5px;
-    margin:50px;
+    margin:auto;
+    
 }
 img{
-    margin-bottom: 20px;
+    
+    margin-bottom: 10px;
     text-align: center;
 }
 .colorOfFooter{

@@ -1,6 +1,6 @@
 .wrapper {
     padding-top: 50px;
-    background: #ECEFF1;
+    background: white;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -8,6 +8,6 @@
     justify-content: space-around;
     align-content: flex-start;
     overflow: hidden;
-    padding-right:200px;
-    padding-left:200px;
+    padding:75px;
+    background-image: url("https://us.123rf.com/450wm/belchonock/belchonock1804/belchonock180428729/98944691-color-puzzles-on-wooden-background.jpg?ver=6");
   }

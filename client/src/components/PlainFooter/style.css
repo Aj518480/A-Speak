@@ -1,4 +1,18 @@
 .plainFooter{
     background-color: #007bff;
     color:white;
+    text-align: center;
+  
+    position: fixed;
+    left: 0;
+    bottom:0;
+    height: 100px;
+    width: 100%;
 }
+.white-text{
+    font-size: 25px;
+}
+p{
+    font-size: 15px;;
+}
+
