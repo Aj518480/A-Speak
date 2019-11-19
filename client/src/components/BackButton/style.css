@@ -1,5 +1,7 @@
 .fa-arrow-circle-left{
-    margin: 10px;
+    margin-bottom: 100px;
     font-size: 50px;
     color:#007bff;
+    display:flex;
+    padding-left:40px
 }

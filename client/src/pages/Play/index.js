@@ -55,6 +55,7 @@ class Play extends Component {
 						handleClick={this.handleClick}
 					/>
 				))}
+				
 				</Wrapper>
 				<BackButton></BackButton>
 				<PlainFooter></PlainFooter>

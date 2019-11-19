@@ -5,6 +5,7 @@ import Button from "../../components/Buttons";
 import {
 	Link
 } from 'react-router-dom';
+import Wrapper from "../../components/Wrapper"
 
 const listStyle = {
 	color: 'cornflowerblue',
@@ -19,7 +20,7 @@ class NewUserForm extends React.Component {
 	render() {
 		return (
             <div>
-                
+                <Wrapper>
                 <Container>
                 <ul style={listStyle}>
                     <li><Link to="/eat"><Button style={btnStyle}>Eat</Button></Link></li>
@@ -31,7 +32,7 @@ class NewUserForm extends React.Component {
                     </Link></li>
                 </ul>
                 </Container>
-                
+                </Wrapper>
                 <PlainFooter/>
             </div>	
 		)
