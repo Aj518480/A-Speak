@@ -1,5 +1,10 @@
 .aboutASpeak{
-  color:#007bff;;
+  color:white;
   margin: 50px;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 30px;
+}
+
+.jumbo{
+  background-color: #dd636b;
 }

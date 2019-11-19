@@ -31,7 +31,7 @@ class Landing extends React.Component {
                 <Container>
                 <Jumbotron />
                 <ul style={listStyle}>
-                    <li><Link to="/login"><Button>Log In</Button></Link></li>
+                    <li><Link to="/login"><Button>Login</Button></Link></li>
                     {/* <li><Link to="/protected">Protected Page</Link></li> */}
                     <li><Link to="/register"><Button>Sign Up</Button>
                     </Link></li>

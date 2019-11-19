@@ -1,38 +1,34 @@
 import React from 'react'
 import PlainFooter from '../../components/PlainFooter';
 import { Container } from '../../components/Grid';
-import Button from "../../components/Buttons";
 import {
 	Link
 } from 'react-router-dom';
-import Wrapper from "../../components/Wrapper"
+import ButtonWrapper from '../../components/ButtonWrapper';
+import "./style.css"
 
-const listStyle = {
-	color: 'cornflowerblue',
-    listStyle: 'none'
-};
-
-const btnStyle = {
-    backgroundColor: 'green'
-};
 
 class NewUserForm extends React.Component {
 	render() {
 		return (
             <div>
-                <Wrapper>
+                <ButtonWrapper>
                 <Container>
-                <ul style={listStyle}>
-                    <li><Link to="/eat"><Button style={btnStyle}>Eat</Button></Link></li>
-                    <li><Link to="/play"><Button>Play</Button>
-                    </Link></li>
-                    <li><Link to="/go"><Button>Go</Button>
-                    </Link></li>
-                    <li><Link to="/uploader"><Button>New</Button>
-                    </Link></li>
-                </ul>
+                
+                    <Link to="/eat"><button className="btn btn-rounded btn-success btn-lg">Eat<i className="fas fa-puzzle-piece pl-4"></i></button></Link>
+                    <br></br>
+                    <Link to="/play"><button className="btn btn-rounded btn-danger btn-lg">play<i className="fas fa-puzzle-piece pl-4"></i></button>
+                    </Link>
+                    <br></br>
+                   
+                    <Link to="/go"><button className="btn btn-rounded btn-warning btn-lg">Go<i className="fas fa-puzzle-piece pl-5"></i></button>
+                    </Link>
+                    <br></br>
+                    <Link to="/uploader"><button className="btn btn-rounded btn-info btn-lg ">new<i className="fas fa-puzzle-piece pl-5 "></i></button>
+                    </Link>
+                
                 </Container>
-                </Wrapper>
+                </ButtonWrapper>
                 <PlainFooter/>
             </div>	
 		)

@@ -148,7 +148,10 @@ class UploadForm extends React.Component {
 
                 <input type="submit" value="upload" className="btn btn-primary btn-block mt-4"/>
             </form>
+
             <div className="col"></div>
+
+            <div classname="bob">
             <div className="card">
                 <div className="img-container">
                     <img
@@ -167,6 +170,7 @@ class UploadForm extends React.Component {
             <h3 className="text-center">{ this.state.title }</h3>
             <img style={{ width:"50%" }} src={this.state.uploadedFile.filePath} alt=""/>
             </div> */}
+            </div>
             </div>
             </div>
            
