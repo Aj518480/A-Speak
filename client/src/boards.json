@@ -38,7 +38,7 @@
       "image":
         "./Images/Eat/banana.PNG",
         "alt":"banana.",
-        "name":"banana",
+        "name":"Banana",
         "boardName":"eat",
         "grammar":"eat a ",
         "sound":"./Sounds/banana.mp3"
