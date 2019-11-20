@@ -77,7 +77,8 @@ passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
 /* === Mongoose Connection === */
-mongoose.connect('mongodb://localhost/aspeak',{ useNewUrlParser: true });
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://Allison:Sky123456@ds221609.mlab.com:21609/heroku_cn1s1vhm',{ useNewUrlParser: true });
 
 /* === Error Handling === */
 
