@@ -6,6 +6,7 @@ import Button from "../../components/Buttons";
 import { Container } from "../../components/Grid";
 import Jumbotron from "../../components/Jumbotron";
 import Footer from "../../components/Footer";
+import Wrapper from "../../components/Wrapper"
 
 
 
@@ -26,6 +27,7 @@ class Landing extends React.Component {
     render() {
         return (
             <div>
+                <Wrapper>
                 {/* <h3>This is a Public Page Here</h3>
                 <p>Anyone can see this content</p> */}
                 <Container>
@@ -37,7 +39,7 @@ class Landing extends React.Component {
                     </Link></li>
                 </ul>
                 </Container>
-
+                </Wrapper>
                 <Footer/>
             </div>
         )

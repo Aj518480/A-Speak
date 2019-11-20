@@ -8,6 +8,7 @@ import PlainFooter from "../../components/PlainFooter";
 import { usernameTransfer } from '../../components/Login';
 import { boardId } from "../../pages/Uploader"
 import API from "../../utils/API";
+import NewBoardWrapper from "../NewBoardWrapper";
 
 
 class UploadForm extends React.Component {
@@ -112,12 +113,12 @@ class UploadForm extends React.Component {
     render() {
         return (
             <div>
-                <Wrapper>
+                <NewBoardWrapper>
                         
                             <div className ="row mt-4">
                                
                                 <form onSubmit={this.onSubmit}>
-                                    <h3>Cards for Board "{this.state.boardTitle}" </h3> 
+                                    <h3 className="cardsForBoard">Cards for Board "{this.state.boardTitle}" </h3> 
                                     <br></br>
                                     <div className="custom-file mb-4">
                                         <input type="file" className="custom-file-input" value={this.state.image} name="image" id="customFile" onChange={this.onChange2} />
@@ -164,7 +165,7 @@ class UploadForm extends React.Component {
                                 </div>
                             </div>
                         
-                </Wrapper>
+             </NewBoardWrapper>
                 <BackButton></BackButton>
                 <PlainFooter />
                 </div>

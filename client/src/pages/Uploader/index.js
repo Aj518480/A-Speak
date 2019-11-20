@@ -5,14 +5,14 @@ import {
 } from 'react-router-dom';
 import Card from "../../components/Card";
 // import Boards from "../../boards.json"
-import Wrapper from "../../components/Wrapper";
+
 import BackButton from "../../components/BackButton"
 import PlainFooter from "../../components/PlainFooter";
 import Button from "../../components/Buttons";
 import UploadForm from "../../components/UploadForm"
-
 import { usernameTransfer } from '../../components/Login';
 import API from '../../utils/API';
+import NewBoardWrapper from '../../components/NewBoardWrapper';
 
 let boardId = ""
 
@@ -78,7 +78,7 @@ handleChange = (event) => {
 	render(){
 		return(
 			<div>
-				<Wrapper>
+				<NewBoardWrapper>
 					<div className="boardDiv">
 						<h3 className="boardName">Create a new Board</h3>
 						<form>
@@ -105,10 +105,10 @@ handleChange = (event) => {
 					{/* <Button onClick={() => this.fileInput.click()}>Choose Image</Button> */}
 					{/* <UploadForm /> */}
 					{/* <Button handleUpload={this.handleUpload}>Upload</Button> */}
-				</Wrapper>
-				<div className="share">
+				
+				</NewBoardWrapper>
 				<BackButton></BackButton>
-				</div>
+				
 				<PlainFooter />
 				
 			</div>
