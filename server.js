@@ -79,7 +79,9 @@ passport.deserializeUser(Account.deserializeUser());
 /* === Mongoose Connection === */
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://Allison:Sky123456@ds221609.mlab.com:21609/heroku_cn1s1vhm',{ useNewUrlParser: true });
-
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static("client/build"));
+}
 /* === Error Handling === */
 
 /* Development error handler will print stacktrace */
