@@ -21,7 +21,7 @@ import React, { Component } from 'react';
 // import Sound from 'react-sound';
 import Card from "../../components/Card";
 // import Boards from "../../boards.json";
-import Wrapper from "../../components/Wrapper";
+import NewBoardWrapper from "../../components/NewBoardWrapper";
 import BackButton from "../../components/BackButton"
 import PlainFooter from "../../components/PlainFooter";
 import HeaderGeneral from "../../components/HeaderGeneral";
@@ -99,14 +99,9 @@ class NewBoard extends Component {
 				
 				<HeaderGeneral />
 				
-				
-				<Wrapper>
-
-				{this.state.boards.eat.map(board =>(
+				<NewBoardWrapper>
+				{this.state.boards.map(card =>(
 					<CardWrapper>
-
-				{this.state.boards.cards.map(card =>(
-					
 
 					
 					<Card 
@@ -121,7 +116,7 @@ class NewBoard extends Component {
 					</CardWrapper>
 				))}
 				
-				</Wrapper>
+				</NewBoardWrapper>
 				
 				<BackButton></BackButton>
 				<PlainFooter></PlainFooter>

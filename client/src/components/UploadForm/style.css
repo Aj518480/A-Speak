@@ -32,6 +32,11 @@
   margin-top: 0px;
   margin-bottom:0px;
   border:8px solid #007bff;
-     
-  
+    
+}
+
+.cardsForBoard{
+  padding:10px;
+  background-color: red;
+  color:white;
 }

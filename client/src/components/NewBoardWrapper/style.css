@@ -1,0 +1,15 @@
+.newBoardWrapper{
+   
+        padding-top: 50px;
+        background: white;
+        height: 68vh;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 20px;
+        justify-content: space-around;
+        align-content: flex-start;
+        overflow: hidden;
+        padding:75px;
+        background-image: url("https://us.123rf.com/450wm/belchonock/belchonock1804/belchonock180428729/98944691-color-puzzles-on-wooden-background.jpg?ver=6");
+      
+}
