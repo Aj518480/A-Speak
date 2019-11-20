@@ -79,10 +79,11 @@ handleChange = (event) => {
 		return(
 			<div>
 				<Wrapper>
-						<h3>Create a new Board</h3>
+					<div className="boardDiv">
+						<h3 className="boardName">Create a new Board</h3>
 						<form>
                             <div className="form-group">
-                                <label htmlFor="inputText">Board Name</label>
+                                <label htmlFor="inputText"></label>
                                 <input 
                                 name="boardName"
                                 onChange={this.handleChange}
@@ -96,6 +97,7 @@ handleChange = (event) => {
                             
                             <button type="submit" onClick={this.onSubmit} className="btn btn-primary">Submit</button>
                         </form>
+						</div>
 					{/* <Card 
                         image={`https://www.pngfind.com/pngs/m/66-661092_png-file-upload-image-icon-png-transparent-png.png`}
 						onClick={() => this.fileInput.click()}

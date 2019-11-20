@@ -1,3 +1,9 @@
 input {
     display: block;
 }
+.boardName{
+    padding:10px;
+    background-color: red;
+    color:white;
+    
+}
