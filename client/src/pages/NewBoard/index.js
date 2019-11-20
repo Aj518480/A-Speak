@@ -25,6 +25,9 @@ import Wrapper from "../../components/Wrapper";
 import BackButton from "../../components/BackButton"
 import PlainFooter from "../../components/PlainFooter";
 import HeaderGeneral from "../../components/HeaderGeneral";
+
+import CardWrapper from '../../components/CardWrapper';
+
 import API from "../../utils/API";
 import { usernameTransfer } from '../../components/Login';
 
@@ -98,8 +101,13 @@ class NewBoard extends Component {
 				
 				
 				<Wrapper>
+
+				{this.state.boards.eat.map(board =>(
+					<CardWrapper>
+
 				{this.state.boards.cards.map(card =>(
 					
+
 					
 					<Card 
 					
@@ -110,7 +118,7 @@ class NewBoard extends Component {
 						handleClick={this.handleClick}
 						
 					/>
-					
+					</CardWrapper>
 				))}
 				
 				</Wrapper>
