@@ -51,7 +51,7 @@ function Card(props) {
           alt={props.alt}
           clicked={props.clicked}
           // onClick={() => props.handleClick(props.)}
-         
+          title={props.title}
           onClick={() => props.handleClick(props.grammar, props.id)}
         />
         
