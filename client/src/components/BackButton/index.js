@@ -7,7 +7,7 @@ import "./style.css";
 class BackButton extends Component {
 
 
-    render() {
+    render() { 
         return(
             <div>
                 <Link to="/new_user" className="backButton fas fa-arrow-circle-left"></Link>
