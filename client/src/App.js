@@ -19,7 +19,6 @@ import ProtectedRoute from "./pages/PublicRoute";
 
 // import Jumbotron from "./components/Jumbotron"
 import './App.css';
-
 import LoginPage from "./pages/LoginPage";
 import Landing from "./pages/Landing";
 import { Login } from './components/Login';
@@ -28,7 +27,8 @@ import Go from "./pages/Go"
 import Eat from "./pages/Eat"
 import Play from "./pages/Play"
 import { Uploader } from "./pages/Uploader"
-import UploadForm from "./components/UploadForm"
+import UploadForm from "./components/UploadForm";
+import NewBoard from "./pages/NewBoard";
 
 
 
@@ -76,6 +76,7 @@ const AuthExample = () => (
 					<PrivateRoute exact path="/go" component={Go} />
 					<PrivateRoute exact path="/eat" component={Eat} />
 					<PrivateRoute exact path="/play" component={Play} />
+					<PrivateRoute exact path="/temp" component={NewBoard} />
 					<PrivateRoute exact path="/uploader" component={Uploader} />
 					<PrivateRoute exact path="/uploader/card" component={UploadForm} />
 					
