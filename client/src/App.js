@@ -22,12 +22,13 @@ import './App.css';
 
 import LoginPage from "./pages/LoginPage";
 import Landing from "./pages/Landing";
-import Login from './components/Login';
+import { Login } from './components/Login';
 import NewUserForm from "./pages/NewUserForm";
 import Go from "./pages/Go"
 import Eat from "./pages/Eat"
 import Play from "./pages/Play"
-import Uploader from "./pages/Uploader"
+import { Uploader } from "./pages/Uploader"
+import UploadForm from "./components/UploadForm"
 
 
 
@@ -76,6 +77,7 @@ const AuthExample = () => (
 					<PrivateRoute exact path="/eat" component={Eat} />
 					<PrivateRoute exact path="/play" component={Play} />
 					<PrivateRoute exact path="/uploader" component={Uploader} />
+					<PrivateRoute exact path="/uploader/card" component={UploadForm} />
 					
 					{/* <PrivateRoute exact path="/protected" component={ProtectedRoute} /> */}
 					
