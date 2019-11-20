@@ -7,7 +7,8 @@
     
 }
 img{
-    
+     width:150px;
+     height:300px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -48,4 +49,7 @@ h5{
 }
 footer{
     color:white;
+}
+.bio{
+    font-size:20px ;
 }

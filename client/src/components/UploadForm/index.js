@@ -168,6 +168,47 @@ class UploadForm extends React.Component {
                 <BackButton></BackButton>
                 <PlainFooter />
                 </div>
+
+                <input
+                    type="text"
+                    name="title"
+                    onChange={this.onChangeForm}
+                    value={this.state.title}
+                    id="cardNameTitle" 
+                    className="form-control" 
+                    placeholder="Card Name" />
+
+                <input type="submit" value="upload" className="btn btn-primary btn-block mt-4"/>
+            </form>
+
+            <div className="col"></div>
+
+            <div classname="bob">
+            <div className="card">
+                <div className="img-container">
+                    <img
+                        style={{ width:"100%" }} src={this.state.uploadedFile.filePath} alt=""/>
+            
+            {/* <div className="col-md-5 m-auto">
+            
+            <img style={{ width:"50%" }} src={this.state.uploadedFile.filePath} alt=""/> */}
+            </div>
+            <p className="cardTitle">{ this.state.title } </p>
+            </div>
+            <div className="col">
+            <button type="addCard" value="Card" className="btn btn-primary btn-block mt-4" onClick={this.addCard}> Add + </button>
+            </div>
+            {/* <div className="col-md-5 m-auto">
+            <h3 className="text-center">{ this.state.title }</h3>
+            <img style={{ width:"50%" }} src={this.state.uploadedFile.filePath} alt=""/>
+            </div> */}
+            </div>
+            </div>
+            </div>
+           
+
+
+
                 )
             }
         }
