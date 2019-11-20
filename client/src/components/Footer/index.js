@@ -8,7 +8,7 @@ function Footer() {
 
 <footer className="page-footer font-small colorOfFooter">
   
-  <div className="container-fluid text-center text-md-left">
+  <div className="container-fluid text-center py-3 text-md-left">
   
     <div className="row p-0">
 
