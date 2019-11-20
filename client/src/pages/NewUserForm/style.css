@@ -3,6 +3,9 @@
     width:500px;
     height:100px;
     font-family: 'Luckiest Guy', cursive;
-    
-    
+}
+
+.btn.btn-lg {
+    padding: 1rem 2.4rem;
+    font-size: 4rem;
 }

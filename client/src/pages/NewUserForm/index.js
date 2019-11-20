@@ -69,9 +69,16 @@ class NewUserForm extends React.Component {
                 </BounceInLeft>
 
                 <BounceInRight>
+                {this.state.boards.map((item, i)=>(
+                    <li><Link key={i} to="/temp"><button className="btn btn-rounded btn-info btn-lg ">{item.boardName}<i className="fas fa-puzzle-piece pl-5 "></i></button>
+                    </Link></li>
+                    ))}
+                </BounceInRight>
+
+                <BounceInLeft>
                     <Link to="/uploader"><button className="btn btn-rounded btn-info btn-lg ">new<i className="fas fa-puzzle-piece pl-5 "></i></button>
                     </Link>
-                </BounceInRight>
+                </BounceInLeft>
                 
                 </Container>
                 </ButtonWrapper>
