@@ -36,7 +36,7 @@ app.use(express.static('public'))
 
 /* Serve up static assets (usually on heroku) */
 if (process.env.NODE_ENV === "production") {
-  app.use(passport.session()); app.use(express.static(path.join(__dirname, '../build')));
+  app.use(passport.session()); app.use(express.static(path.join(__dirname, '/client/build')));
 };
 
 /* FileUpload package grabbing the image and setting a path for it */
@@ -79,9 +79,9 @@ passport.deserializeUser(Account.deserializeUser());
 /* === Mongoose Connection === */
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://Allison:Sky123456@ds221609.mlab.com:21609/heroku_cn1s1vhm',{ useNewUrlParser: true });
-if(process.env.NODE_ENV === "production"){
-  app.use(express.static("client/build"));
-}
+// if(process.env.NODE_ENV === "production"){
+//   app.use(express.static("client/build"));
+// }
 /* === Error Handling === */
 
 /* Development error handler will print stacktrace */
