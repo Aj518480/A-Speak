@@ -2,10 +2,11 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import LoginForm from "../LoginForm";
 import Auth from "../../utils/Auth";
-
+import { Container } from "../Grid";
 import PlainFooter from '../PlainFooter';
-import LoginWrapper from "../LoginWrapper"
 import "./style.css"
+
+let usernameTransfer = ""
 //Uses the Auth methods to actually login with the LoginForm Component.
 class Login extends React.Component {
     //Initial boolean to check for authenticated user
@@ -16,6 +17,7 @@ class Login extends React.Component {
         This will get passed down as a prop to the LoginForm */
 	login = (data) => {
 		console.log('Logging in ' + data.username);
+		usernameTransfer = data.username;
 		fetch('api/users/login', {
 			method: 'POST',
 			body: JSON.stringify(data),
@@ -48,16 +50,14 @@ class Login extends React.Component {
 		
 		return (
 			<div>
-				<LoginWrapper>
-				
+				<Container>
 				<p className="loginP">You must log in to view the page at {from.pathname}</p>
 				<LoginForm onLogin={this.login} />
-				
-				</LoginWrapper>
+				</Container>
 				<PlainFooter></PlainFooter>
 			</div>
 		)
 	}
 }
 
-export default Login;
+export { Login, usernameTransfer };

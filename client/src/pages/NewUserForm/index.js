@@ -9,6 +9,8 @@ import ButtonWrapper from '../../components/ButtonWrapper';
 import styled, { keyframes } from 'styled-components';
 import { bounceInLeft } from 'react-animations';
 import { bounceInRight } from 'react-animations';
+import API from "../../utils/API";
+import { usernameTransfer } from '../../components/Login';
 import "./style.css"
  
 const bounceInLeftAnimation = keyframes`${bounceInLeft}`;
@@ -22,26 +24,6 @@ const BounceInRight = styled.div`
   animation: 1s ${bounceInRightAnimation};
 `;
 
-
-import Button from "../../components/Buttons";
-import { usernameTransfer } from '../../components/Login';
-import {
-	Link
-} from 'react-router-dom';
-
-import API from "../../utils/API";
-
-import Wrapper from "../../components/Wrapper"
-
-
-const listStyle = {
-	color: 'cornflowerblue',
-    listStyle: 'none'
-};
-
-const btnStyle = {
-    backgroundColor: 'green'
-};
 
 
 class NewUserForm extends React.Component {
@@ -60,14 +42,7 @@ class NewUserForm extends React.Component {
                 })
                 .catch(err => console.log(err))
 
-
-
-
     }
-
-
-
-
 
 	render() {
 		return (
@@ -98,21 +73,6 @@ class NewUserForm extends React.Component {
                     </Link>
                 </BounceInRight>
                 
-
-                <ul style={listStyle}>
-                    <li><Link to="/eat"><Button style={btnStyle}>Eat</Button></Link></li>
-                    <li><Link to="/play"><Button>Play</Button>
-                    </Link></li>
-                    <li><Link to="/go"><Button>Go</Button>
-                    </Link></li>
-                    {this.state.boards.map((item, i)=>(
-                    <li><Link key={i} to="/temp"><Button>{item.boardName}</Button>
-                    </Link></li>
-                    ))}
-                    <li><Link to="/uploader"><Button>New</Button>
-                    </Link></li>
-                </ul>
-
                 </Container>
                 </ButtonWrapper>
                 <PlainFooter/>
