@@ -106,8 +106,11 @@ handleChange = (event) => {
 					{/* <UploadForm /> */}
 					{/* <Button handleUpload={this.handleUpload}>Upload</Button> */}
 				</Wrapper>
+				<div className="share">
 				<BackButton></BackButton>
+				</div>
 				<PlainFooter />
+				
 			</div>
 		)
 	}

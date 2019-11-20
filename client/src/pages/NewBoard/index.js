@@ -25,6 +25,7 @@ import Wrapper from "../../components/Wrapper";
 import BackButton from "../../components/BackButton"
 import PlainFooter from "../../components/PlainFooter";
 import HeaderGeneral from "../../components/HeaderGeneral";
+import CardWrapper from '../../components/CardWrapper';
 
 
 
@@ -77,7 +78,7 @@ class NewBoard extends Component {
 				
 				<Wrapper>
 				{this.state.boards.eat.map(board =>(
-					
+					<CardWrapper>
 					
 					<Card 
 					
@@ -87,7 +88,7 @@ class NewBoard extends Component {
 						name={board.name}
 						handleClick={this.handleClick}
 					/>
-					
+					</CardWrapper>
 				))}
 				
 				</Wrapper>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import {
 // 	Link
 // } from 'react-router-dom';
+import CardWrapper from "../../components/CardWrapper"
 import Sound from 'react-sound';
 import Card from "../../components/Card";
 import Boards from "../../boards.json";
@@ -43,6 +44,7 @@ class Go extends Component {
 				/>
 				<Wrapper>
 					{this.state.boards.go.map(board => (
+						<CardWrapper>
 						<Card
 							key={board.id}
 							id={board.id}
@@ -53,6 +55,7 @@ class Go extends Component {
 							soundStatus={this.state.soundStatus}
 							handleClick={this.handleClick}
 						/>
+						</CardWrapper>
 					))}
 				</Wrapper>
 				<BackButton></BackButton>

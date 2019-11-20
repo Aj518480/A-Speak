@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import CardWrapper from "../../components/CardWrapper"
 import Sound from 'react-sound';
 import Card from "../../components/Card";
 import Boards from "../../boards.json";
@@ -56,9 +56,10 @@ class Eat extends Component {
 				
 				
 				<Wrapper>
+				
 				{this.state.boards.eat.map(board =>(
 					
-					
+					<CardWrapper>
 					<Card 
 					
 						key={board.id}
@@ -70,10 +71,11 @@ class Eat extends Component {
 						soundStatus={this.state.soundStatus}
 						handleClick={this.handleClick}
 					/>
-					
+					</CardWrapper>
 				))}
 				
 				</Wrapper>
+				
 				
 				<BackButton></BackButton>
 				<PlainFooter></PlainFooter>

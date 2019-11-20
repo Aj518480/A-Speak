@@ -9,6 +9,7 @@ import Wrapper from "../../components/Wrapper"
 import BackButton from "../../components/BackButton"
 import PlainFooter from "../../components/PlainFooter"
 import HeaderGeneral from "../../components/HeaderGeneral"
+import CardWrapper from "../../components/CardWrapper"
 
 
 class Play extends Component {
@@ -44,6 +45,7 @@ class Play extends Component {
 				/>
 				<Wrapper>
 				{this.state.boards.play.map(board =>(
+					<CardWrapper>
 					<Card 
 						key={board.id}
 						id={board.id}
@@ -54,6 +56,7 @@ class Play extends Component {
 						soundStatus={this.state.soundStatus}
 						handleClick={this.handleClick}
 					/>
+					</CardWrapper>
 				))}
 				
 				</Wrapper>
