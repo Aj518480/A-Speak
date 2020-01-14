@@ -10,12 +10,12 @@ class LogOutBtn extends Component {
     render() {
         return(
             <div>
-               <Link to="/"><form align="right" name="form1" method="post" action="log_out.php">
-                    <label className="logoutLblPos">
-                <input name="submit2" type="submit" id="submit2" value="log out">
-                    </input>
+               <Link to="/">
+                    <button className="logoutLblPos">
+                <label name="submit2" type="submit" id="submit2" value="log out">
                     </label>
-                </form>
+                    Logout
+                    </button>
                 </Link> 
             </div>  
         )

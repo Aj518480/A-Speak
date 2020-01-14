@@ -1,6 +1,12 @@
 .logoutLblPos{
-    background-color: khaki;
+    background-color: red;
     position:fixed;
     right:10px;
     top:5px;
+    font-family: 'Bowlby One SC', cursive;
+    border-radius: 4px;
+    color:white;
+    margin:20px;
+    padding:8px;
+    font-size:20px;
  }
