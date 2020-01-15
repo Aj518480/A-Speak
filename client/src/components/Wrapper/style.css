@@ -4,10 +4,10 @@
   /* height: 63vh; */
   display: flex;
   flex-flow: row wrap;
-  padding: 20px;
+  /* padding: 20px; */
   justify-content: space-around;
   align-content: flex-start;
   overflow: hidden;
-  padding:75px;
+  padding:50px;
   background-image: url("https://us.123rf.com/450wm/belchonock/belchonock1804/belchonock180428729/98944691-color-puzzles-on-wooden-background.jpg?ver=6");
 }
