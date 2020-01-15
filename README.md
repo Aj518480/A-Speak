@@ -3,6 +3,8 @@
 A-Speak application to assist individuals that are non-verbal or that have speech hurdles that would like to be addressed without breaking the bank. We hope to address the problems with the existing application like ours that it will be personalize to the child or the individual. EX: If a child associates a glass with a water bottle or a favorite cup our application will let the parent or speech therapist take a personal picture of the object and record in his/her voice. We will be using MongoDB to bring up personal preferences and React for the User Interface. Node and Express to communicate with the server to make it a full-stack application.
 
 ![ASpeakHomePg](https://user-images.githubusercontent.com/53452871/72387735-35c04500-36f2-11ea-9b8b-c37390e35105.PNG)
+
+![AspeakNewHomePg](https://user-images.githubusercontent.com/53452871/72404231-8b144a80-3722-11ea-8777-83d44e8e707d.PNG)
 ## Live Link
 
 Find A-Speak [here](https://a-speak.herokuapp.com/)
