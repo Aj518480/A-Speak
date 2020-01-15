@@ -5,7 +5,7 @@ A-Speak application to assist individuals that are non-verbal or that have speec
 ![ASpeakHomePg](https://user-images.githubusercontent.com/53452871/72387735-35c04500-36f2-11ea-9b8b-c37390e35105.PNG)
 ## Live Link
 
-Find A-Speak [here](http://stormy-thicket-72557.herokuapp.com/)
+Find A-Speak [here](https://a-speak.herokuapp.com/)
 
 ## Structure
 
